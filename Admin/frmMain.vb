@@ -34,6 +34,7 @@
     Private Sub btnStock_Click(sender As Object, e As EventArgs) Handles btnStock.Click
         HideMenu()
         lblTitle.Text = "STOCK MANAGEMENT"
+        FrmStock1.Visible = True
         FrmStock1.BringToFront()
     End Sub
 

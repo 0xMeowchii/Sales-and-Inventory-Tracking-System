@@ -106,11 +106,10 @@ Partial Class frmStock
         Me.cboCategory.HoverState.Parent = Me.cboCategory
         Me.cboCategory.ItemHeight = 30
         Me.cboCategory.ItemsAppearance.Parent = Me.cboCategory
-        Me.cboCategory.Location = New System.Drawing.Point(452, 59)
+        Me.cboCategory.Location = New System.Drawing.Point(452, 56)
         Me.cboCategory.Name = "cboCategory"
         Me.cboCategory.ShadowDecoration.Parent = Me.cboCategory
         Me.cboCategory.Size = New System.Drawing.Size(234, 36)
-        Me.cboCategory.StartIndex = 0
         Me.cboCategory.TabIndex = 9
         Me.cboCategory.TextOffset = New System.Drawing.Point(2, 0)
         '
@@ -242,7 +241,7 @@ Partial Class frmStock
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(90, 40)
         Me.Label7.TabIndex = 2
-        Me.Label7.Text = "High"
+        Me.Label7.Text = "Normal"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Guna2Panel2
@@ -284,7 +283,7 @@ Partial Class frmStock
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(90, 40)
         Me.Label5.TabIndex = 2
-        Me.Label5.Text = "Normal"
+        Me.Label5.Text = "Low"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Guna2Panel1
@@ -366,6 +365,7 @@ Partial Class frmStock
         Me.dgvStock.GridColor = System.Drawing.Color.White
         Me.dgvStock.Location = New System.Drawing.Point(19, 174)
         Me.dgvStock.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgvStock.MultiSelect = False
         Me.dgvStock.Name = "dgvStock"
         Me.dgvStock.ReadOnly = True
         Me.dgvStock.RowHeadersVisible = False
