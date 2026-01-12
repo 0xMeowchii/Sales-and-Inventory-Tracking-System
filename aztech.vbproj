@@ -133,6 +133,30 @@
     <Compile Include="Admin\frmUsers.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Admin\modalAdd.Designer.vb">
+      <DependentUpon>modalAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\modalAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\modalAddUser.Designer.vb">
+      <DependentUpon>modalAddUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\modalAddUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\modalEdit.Designer.vb">
+      <DependentUpon>modalEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\modalEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\modalEditUser.Designer.vb">
+      <DependentUpon>modalEditUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\modalEditUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Module\Connection.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -175,6 +199,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\frmUsers.resx">
       <DependentUpon>frmUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\modalAdd.resx">
+      <DependentUpon>modalAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\modalAddUser.resx">
+      <DependentUpon>modalAddUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\modalEdit.resx">
+      <DependentUpon>modalEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\modalEditUser.resx">
+      <DependentUpon>modalEditUser.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -270,6 +306,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-android-phone-15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\icons8-email-15.png" />
+    <None Include="Resources\icons8-user-black-15.png" />
+    <None Include="Resources\icons8-lock-151.png" />
+    <None Include="Resources\icons8-eye-15.png" />
+    <None Include="Resources\icons8-email-151.png" />
+    <Content Include="Resources\icons8-lock-15.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

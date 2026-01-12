@@ -173,7 +173,7 @@ Partial Class frmLogin
         '
         Me.Guna2PictureBox1.Image = Global.attendancesystem.My.Resources.Resources.logo_
         Me.Guna2PictureBox1.Location = New System.Drawing.Point(96, 97)
-        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
         Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
         Me.Guna2PictureBox1.Size = New System.Drawing.Size(267, 156)
@@ -220,7 +220,7 @@ Partial Class frmLogin
         Me.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtPassword.HoverState.Parent = Me.txtPassword
         Me.txtPassword.Location = New System.Drawing.Point(96, 309)
-        Me.txtPassword.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txtPassword.Margin = New System.Windows.Forms.Padding(5)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -251,7 +251,7 @@ Partial Class frmLogin
         Me.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtUsername.HoverState.Parent = Me.txtUsername
         Me.txtUsername.Location = New System.Drawing.Point(96, 261)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(5)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
         Me.txtUsername.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
