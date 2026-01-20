@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class modalEditUser
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class modalEditUser
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
@@ -38,8 +38,6 @@ Partial Class modalEditUser
         Me.txtPassword = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txtUsername = New Guna.UI2.WinForms.Guna2TextBox()
         Me.btnEdit = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2ShadowForm2 = New Guna.UI2.WinForms.Guna2ShadowForm(Me.components)
-        Me.Guna2Elipse2 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnExit = New Guna.UI2.WinForms.Guna2ImageButton()
         Me.Guna2GroupBox1.SuspendLayout()
@@ -49,6 +47,7 @@ Partial Class modalEditUser
         '
         'Guna2Elipse1
         '
+        Me.Guna2Elipse1.BorderRadius = 25
         Me.Guna2Elipse1.TargetControl = Me
         '
         'btnCancel
@@ -420,6 +419,4 @@ Partial Class modalEditUser
     Friend WithEvents Panel1 As Panel
     Friend WithEvents btnExit As Guna.UI2.WinForms.Guna2ImageButton
     Friend WithEvents Label1 As Label
-    Friend WithEvents Guna2ShadowForm2 As Guna.UI2.WinForms.Guna2ShadowForm
-    Friend WithEvents Guna2Elipse2 As Guna.UI2.WinForms.Guna2Elipse
 End Class

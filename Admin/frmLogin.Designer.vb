@@ -225,11 +225,12 @@ Partial Class frmLogin
         Me.txtPassword.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPassword.PlaceholderForeColor = System.Drawing.Color.DimGray
-        Me.txtPassword.PlaceholderText = "  Enter Password"
+        Me.txtPassword.PlaceholderText = "Enter Password"
         Me.txtPassword.SelectedText = ""
         Me.txtPassword.ShadowDecoration.Parent = Me.txtPassword
         Me.txtPassword.Size = New System.Drawing.Size(267, 39)
         Me.txtPassword.TabIndex = 5
+        Me.txtPassword.TextOffset = New System.Drawing.Point(5, 0)
         '
         'txtUsername
         '
@@ -256,11 +257,12 @@ Partial Class frmLogin
         Me.txtUsername.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
         Me.txtUsername.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtUsername.PlaceholderForeColor = System.Drawing.Color.DimGray
-        Me.txtUsername.PlaceholderText = "  Enter Username"
+        Me.txtUsername.PlaceholderText = "Enter Username"
         Me.txtUsername.SelectedText = ""
         Me.txtUsername.ShadowDecoration.Parent = Me.txtUsername
         Me.txtUsername.Size = New System.Drawing.Size(267, 39)
         Me.txtUsername.TabIndex = 4
+        Me.txtUsername.TextOffset = New System.Drawing.Point(5, 0)
         '
         'frmLogin
         '

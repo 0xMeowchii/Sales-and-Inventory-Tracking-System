@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class modalAddUser
+Partial Class modalEdit
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -25,20 +25,20 @@ Partial Class modalAddUser
         Me.components = New System.ComponentModel.Container()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2ShadowForm1 = New Guna.UI2.WinForms.Guna2ShadowForm(Me.components)
-        Me.txtEmail = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.txtUsername = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.btnExit = New Guna.UI2.WinForms.Guna2ImageButton()
         Me.Guna2GroupBox2 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.txtEmail = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txtPassword = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.txtUsername = New Guna.UI2.WinForms.Guna2TextBox()
         Me.cboGender = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.txtContactNum = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txtMiddleName = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.btnSave = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnEdit = New Guna.UI2.WinForms.Guna2Button()
         Me.txtLastName = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.txtFirstName = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnExit = New Guna.UI2.WinForms.Guna2ImageButton()
         Me.btnCancel = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2GroupBox2.SuspendLayout()
         Me.Guna2GroupBox1.SuspendLayout()
@@ -47,7 +47,25 @@ Partial Class modalAddUser
         '
         'Guna2Elipse1
         '
+        Me.Guna2Elipse1.BorderRadius = 25
         Me.Guna2Elipse1.TargetControl = Me
+        '
+        'Guna2GroupBox2
+        '
+        Me.Guna2GroupBox2.BorderColor = System.Drawing.Color.Black
+        Me.Guna2GroupBox2.BorderRadius = 10
+        Me.Guna2GroupBox2.Controls.Add(Me.txtEmail)
+        Me.Guna2GroupBox2.Controls.Add(Me.txtPassword)
+        Me.Guna2GroupBox2.Controls.Add(Me.txtUsername)
+        Me.Guna2GroupBox2.CustomBorderColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Guna2GroupBox2.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2GroupBox2.ForeColor = System.Drawing.Color.White
+        Me.Guna2GroupBox2.Location = New System.Drawing.Point(18, 324)
+        Me.Guna2GroupBox2.Name = "Guna2GroupBox2"
+        Me.Guna2GroupBox2.ShadowDecoration.Parent = Me.Guna2GroupBox2
+        Me.Guna2GroupBox2.Size = New System.Drawing.Size(755, 147)
+        Me.Guna2GroupBox2.TabIndex = 20
+        Me.Guna2GroupBox2.Text = "Account Information"
         '
         'txtEmail
         '
@@ -77,66 +95,6 @@ Partial Class modalAddUser
         Me.txtEmail.TabIndex = 2
         Me.txtEmail.TextOffset = New System.Drawing.Point(2, 0)
         '
-        'txtUsername
-        '
-        Me.txtUsername.BackColor = System.Drawing.Color.Transparent
-        Me.txtUsername.BorderColor = System.Drawing.Color.Transparent
-        Me.txtUsername.BorderRadius = 10
-        Me.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtUsername.DefaultText = ""
-        Me.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.txtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txtUsername.DisabledState.Parent = Me.txtUsername
-        Me.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtUsername.FocusedState.Parent = Me.txtUsername
-        Me.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtUsername.HoverState.Parent = Me.txtUsername
-        Me.txtUsername.IconLeft = Global.attendancesystem.My.Resources.Resources.icons8_user_black_15
-        Me.txtUsername.Location = New System.Drawing.Point(27, 72)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtUsername.PlaceholderText = "Username"
-        Me.txtUsername.SelectedText = ""
-        Me.txtUsername.ShadowDecoration.Parent = Me.txtUsername
-        Me.txtUsername.Size = New System.Drawing.Size(197, 37)
-        Me.txtUsername.TabIndex = 0
-        Me.txtUsername.TextOffset = New System.Drawing.Point(2, 0)
-        '
-        'btnExit
-        '
-        Me.btnExit.CheckedState.Parent = Me.btnExit
-        Me.btnExit.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnExit.Dock = System.Windows.Forms.DockStyle.Right
-        Me.btnExit.HoverState.Parent = Me.btnExit
-        Me.btnExit.Image = Global.attendancesystem.My.Resources.Resources.icons8_x_15__1_
-        Me.btnExit.ImageSize = New System.Drawing.Size(15, 16)
-        Me.btnExit.Location = New System.Drawing.Point(727, 0)
-        Me.btnExit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.PressedState.Parent = Me.btnExit
-        Me.btnExit.Size = New System.Drawing.Size(65, 50)
-        Me.btnExit.TabIndex = 2
-        '
-        'Guna2GroupBox2
-        '
-        Me.Guna2GroupBox2.BorderColor = System.Drawing.Color.Black
-        Me.Guna2GroupBox2.BorderRadius = 10
-        Me.Guna2GroupBox2.Controls.Add(Me.txtEmail)
-        Me.Guna2GroupBox2.Controls.Add(Me.txtPassword)
-        Me.Guna2GroupBox2.Controls.Add(Me.txtUsername)
-        Me.Guna2GroupBox2.CustomBorderColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Guna2GroupBox2.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2GroupBox2.ForeColor = System.Drawing.Color.White
-        Me.Guna2GroupBox2.Location = New System.Drawing.Point(18, 325)
-        Me.Guna2GroupBox2.Name = "Guna2GroupBox2"
-        Me.Guna2GroupBox2.ShadowDecoration.Parent = Me.Guna2GroupBox2
-        Me.Guna2GroupBox2.Size = New System.Drawing.Size(755, 147)
-        Me.Guna2GroupBox2.TabIndex = 20
-        Me.Guna2GroupBox2.Text = "Account Information"
-        '
         'txtPassword
         '
         Me.txtPassword.BackColor = System.Drawing.Color.Transparent
@@ -165,6 +123,34 @@ Partial Class modalAddUser
         Me.txtPassword.TabIndex = 1
         Me.txtPassword.TextOffset = New System.Drawing.Point(2, 0)
         Me.txtPassword.UseSystemPasswordChar = True
+        '
+        'txtUsername
+        '
+        Me.txtUsername.BackColor = System.Drawing.Color.Transparent
+        Me.txtUsername.BorderColor = System.Drawing.Color.Transparent
+        Me.txtUsername.BorderRadius = 10
+        Me.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtUsername.DefaultText = ""
+        Me.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtUsername.DisabledState.Parent = Me.txtUsername
+        Me.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtUsername.FocusedState.Parent = Me.txtUsername
+        Me.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtUsername.HoverState.Parent = Me.txtUsername
+        Me.txtUsername.IconLeft = Global.attendancesystem.My.Resources.Resources.icons8_user_black_15
+        Me.txtUsername.Location = New System.Drawing.Point(27, 72)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.txtUsername.Name = "txtUsername"
+        Me.txtUsername.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtUsername.PlaceholderText = "Username"
+        Me.txtUsername.SelectedText = ""
+        Me.txtUsername.ShadowDecoration.Parent = Me.txtUsername
+        Me.txtUsername.Size = New System.Drawing.Size(197, 37)
+        Me.txtUsername.TabIndex = 0
+        Me.txtUsername.TextOffset = New System.Drawing.Point(2, 0)
         '
         'cboGender
         '
@@ -205,14 +191,14 @@ Partial Class modalAddUser
         Me.txtContactNum.FocusedState.Parent = Me.txtContactNum
         Me.txtContactNum.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtContactNum.HoverState.Parent = Me.txtContactNum
-        Me.txtContactNum.Location = New System.Drawing.Point(262, 138)
+        Me.txtContactNum.Location = New System.Drawing.Point(262, 135)
         Me.txtContactNum.Margin = New System.Windows.Forms.Padding(12, 19, 12, 19)
         Me.txtContactNum.Name = "txtContactNum"
         Me.txtContactNum.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtContactNum.PlaceholderText = "Contact Number"
         Me.txtContactNum.SelectedText = ""
         Me.txtContactNum.ShadowDecoration.Parent = Me.txtContactNum
-        Me.txtContactNum.Size = New System.Drawing.Size(212, 33)
+        Me.txtContactNum.Size = New System.Drawing.Size(212, 36)
         Me.txtContactNum.TabIndex = 4
         '
         'txtMiddleName
@@ -241,27 +227,27 @@ Partial Class modalAddUser
         Me.txtMiddleName.Size = New System.Drawing.Size(213, 37)
         Me.txtMiddleName.TabIndex = 2
         '
-        'btnSave
+        'btnEdit
         '
-        Me.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnSave.BorderColor = System.Drawing.Color.DodgerBlue
-        Me.btnSave.BorderRadius = 5
-        Me.btnSave.BorderThickness = 1
-        Me.btnSave.CheckedState.Parent = Me.btnSave
-        Me.btnSave.CustomImages.Parent = Me.btnSave
-        Me.btnSave.FillColor = System.Drawing.Color.Transparent
-        Me.btnSave.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btnSave.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.btnSave.HoverState.FillColor = System.Drawing.Color.DodgerBlue
-        Me.btnSave.HoverState.ForeColor = System.Drawing.Color.Black
-        Me.btnSave.HoverState.Parent = Me.btnSave
-        Me.btnSave.Location = New System.Drawing.Point(667, 509)
-        Me.btnSave.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.ShadowDecoration.Parent = Me.btnSave
-        Me.btnSave.Size = New System.Drawing.Size(106, 36)
-        Me.btnSave.TabIndex = 21
-        Me.btnSave.Text = "Save"
+        Me.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnEdit.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.btnEdit.BorderRadius = 5
+        Me.btnEdit.BorderThickness = 1
+        Me.btnEdit.CheckedState.Parent = Me.btnEdit
+        Me.btnEdit.CustomImages.Parent = Me.btnEdit
+        Me.btnEdit.FillColor = System.Drawing.Color.Transparent
+        Me.btnEdit.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnEdit.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.btnEdit.HoverState.FillColor = System.Drawing.Color.DodgerBlue
+        Me.btnEdit.HoverState.ForeColor = System.Drawing.Color.Black
+        Me.btnEdit.HoverState.Parent = Me.btnEdit
+        Me.btnEdit.Location = New System.Drawing.Point(667, 508)
+        Me.btnEdit.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnEdit.Name = "btnEdit"
+        Me.btnEdit.ShadowDecoration.Parent = Me.btnEdit
+        Me.btnEdit.Size = New System.Drawing.Size(106, 36)
+        Me.btnEdit.TabIndex = 21
+        Me.btnEdit.Text = "Edit"
         '
         'txtLastName
         '
@@ -301,7 +287,7 @@ Partial Class modalAddUser
         Me.Guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(41, Byte), Integer))
         Me.Guna2GroupBox1.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.White
-        Me.Guna2GroupBox1.Location = New System.Drawing.Point(18, 89)
+        Me.Guna2GroupBox1.Location = New System.Drawing.Point(18, 88)
         Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
         Me.Guna2GroupBox1.ShadowDecoration.Parent = Me.Guna2GroupBox1
         Me.Guna2GroupBox1.Size = New System.Drawing.Size(755, 215)
@@ -342,9 +328,9 @@ Partial Class modalAddUser
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(0, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(162, 50)
+        Me.Label1.Size = New System.Drawing.Size(161, 50)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Add Account"
+        Me.Label1.Text = "Edit Account"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel1
@@ -357,6 +343,21 @@ Partial Class modalAddUser
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(792, 50)
         Me.Panel1.TabIndex = 18
+        '
+        'btnExit
+        '
+        Me.btnExit.CheckedState.Parent = Me.btnExit
+        Me.btnExit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnExit.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btnExit.HoverState.Parent = Me.btnExit
+        Me.btnExit.Image = Global.attendancesystem.My.Resources.Resources.icons8_x_15__1_
+        Me.btnExit.ImageSize = New System.Drawing.Size(15, 16)
+        Me.btnExit.Location = New System.Drawing.Point(727, 0)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.PressedState.Parent = Me.btnExit
+        Me.btnExit.Size = New System.Drawing.Size(65, 50)
+        Me.btnExit.TabIndex = 2
         '
         'btnCancel
         '
@@ -372,7 +373,7 @@ Partial Class modalAddUser
         Me.btnCancel.HoverState.FillColor = System.Drawing.Color.Tomato
         Me.btnCancel.HoverState.ForeColor = System.Drawing.Color.Black
         Me.btnCancel.HoverState.Parent = Me.btnCancel
-        Me.btnCancel.Location = New System.Drawing.Point(547, 509)
+        Me.btnCancel.Location = New System.Drawing.Point(547, 508)
         Me.btnCancel.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.ShadowDecoration.Parent = Me.btnCancel
@@ -380,20 +381,20 @@ Partial Class modalAddUser
         Me.btnCancel.TabIndex = 22
         Me.btnCancel.Text = "Cancel"
         '
-        'modalAddUser
+        'modalEdit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(792, 564)
         Me.Controls.Add(Me.Guna2GroupBox2)
-        Me.Controls.Add(Me.btnSave)
+        Me.Controls.Add(Me.btnEdit)
         Me.Controls.Add(Me.Guna2GroupBox1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnCancel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "modalAddUser"
+        Me.Name = "modalEdit"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "modalAddUser"
+        Me.Text = "modalEdit"
         Me.Guna2GroupBox2.ResumeLayout(False)
         Me.Guna2GroupBox1.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
@@ -402,12 +403,11 @@ Partial Class modalAddUser
     End Sub
 
     Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
-    Friend WithEvents Guna2ShadowForm1 As Guna.UI2.WinForms.Guna2ShadowForm
     Friend WithEvents Guna2GroupBox2 As Guna.UI2.WinForms.Guna2GroupBox
     Friend WithEvents txtEmail As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents txtPassword As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents txtUsername As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents btnSave As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnEdit As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2GroupBox1 As Guna.UI2.WinForms.Guna2GroupBox
     Friend WithEvents cboGender As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents txtContactNum As Guna.UI2.WinForms.Guna2TextBox
@@ -418,4 +418,5 @@ Partial Class modalAddUser
     Friend WithEvents btnExit As Guna.UI2.WinForms.Guna2ImageButton
     Friend WithEvents Label1 As Label
     Friend WithEvents btnCancel As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2ShadowForm1 As Guna.UI2.WinForms.Guna2ShadowForm
 End Class

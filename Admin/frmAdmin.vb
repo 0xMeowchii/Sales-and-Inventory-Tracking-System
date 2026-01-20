@@ -1,5 +1,5 @@
-﻿Imports System.Data.SqlClient
-Public Class frmAdmin
+﻿Public Class frmAdmin
+
     Public Sub viewdata()
         Try
             Connection.Query("SELECT * FROM AdminAccount")
@@ -30,17 +30,18 @@ Public Class frmAdmin
         End Try
     End Sub
 
-    Private Sub frmAdmin_Load(sender As Object, e As EventArgs) Handles Me.Load
-        viewdata()
-        totalAdmin()
-    End Sub
-
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         Dim modalAdd As New modalAdd()
         modalAdd.ShowDialog()
 
         viewdata()
         totalAdmin()
+    End Sub
+
+    Private Sub frmAdmin_Load(sender As Object, e As EventArgs) Handles Me.Load
+        viewdata()
+        totalAdmin()
+
     End Sub
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
@@ -81,6 +82,7 @@ Public Class frmAdmin
         Catch ex As Exception
             MsgBox($"Error: {ex.Message}")
         End Try
+
     End Sub
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click

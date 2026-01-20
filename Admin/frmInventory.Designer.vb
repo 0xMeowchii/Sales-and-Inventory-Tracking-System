@@ -88,7 +88,7 @@ Partial Class frmInventory
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(268, 64)
         Me.lblName.TabIndex = 1
-        Me.lblName.Text = "Mobile Devices"
+        Me.lblName.Text = "Product/s"
         Me.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblTotal

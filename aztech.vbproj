@@ -127,35 +127,59 @@
     <Compile Include="Admin\frmStock.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Admin\frmSupplier.Designer.vb">
+      <DependentUpon>frmSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmSupplier.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Admin\frmUsers.Designer.vb">
       <DependentUpon>frmUsers.vb</DependentUpon>
     </Compile>
     <Compile Include="Admin\frmUsers.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin\modalAdd.Designer.vb">
+    <Compile Include="Admin\Modal\Admin\modalAdd.Designer.vb">
       <DependentUpon>modalAdd.vb</DependentUpon>
     </Compile>
-    <Compile Include="Admin\modalAdd.vb">
+    <Compile Include="Admin\Modal\Admin\modalAdd.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\modalAddUser.Designer.vb">
+    <Compile Include="Admin\Modal\Products\modalEditProducts.Designer.vb">
+      <DependentUpon>modalEditProducts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Modal\Products\modalEditProducts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Modal\Users\modalAddUser.Designer.vb">
       <DependentUpon>modalAddUser.vb</DependentUpon>
     </Compile>
-    <Compile Include="Admin\modalAddUser.vb">
+    <Compile Include="Admin\Modal\Users\modalAddUser.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\modalEdit.Designer.vb">
+    <Compile Include="Admin\Modal\Admin\modalEdit.Designer.vb">
       <DependentUpon>modalEdit.vb</DependentUpon>
     </Compile>
-    <Compile Include="Admin\modalEdit.vb">
+    <Compile Include="Admin\Modal\Admin\modalEdit.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\modalEditUser.Designer.vb">
+    <Compile Include="Admin\Modal\Users\modalEditUser.Designer.vb">
       <DependentUpon>modalEditUser.vb</DependentUpon>
     </Compile>
-    <Compile Include="Admin\modalEditUser.vb">
+    <Compile Include="Admin\Modal\Users\modalEditUser.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Modal\Products\modalAddProducts.Designer.vb">
+      <DependentUpon>modalAddProducts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Modal\Products\modalAddProducts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmBrand.Designer.vb">
+      <DependentUpon>frmBrand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmBrand.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Module\Connection.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -185,6 +209,9 @@
     <EmbeddedResource Include="Admin\frmAdmin.resx">
       <DependentUpon>frmAdmin.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmBrand.resx">
+      <DependentUpon>frmBrand.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\frmInventory.resx">
       <DependentUpon>frmInventory.vb</DependentUpon>
     </EmbeddedResource>
@@ -197,20 +224,29 @@
     <EmbeddedResource Include="Admin\frmStock.resx">
       <DependentUpon>frmStock.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmSupplier.resx">
+      <DependentUpon>frmSupplier.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\frmUsers.resx">
       <DependentUpon>frmUsers.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\modalAdd.resx">
+    <EmbeddedResource Include="Admin\Modal\Admin\modalAdd.resx">
       <DependentUpon>modalAdd.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\modalAddUser.resx">
+    <EmbeddedResource Include="Admin\Modal\Products\modalEditProducts.resx">
+      <DependentUpon>modalEditProducts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Modal\Users\modalAddUser.resx">
       <DependentUpon>modalAddUser.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\modalEdit.resx">
+    <EmbeddedResource Include="Admin\Modal\Admin\modalEdit.resx">
       <DependentUpon>modalEdit.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\modalEditUser.resx">
+    <EmbeddedResource Include="Admin\Modal\Users\modalEditUser.resx">
       <DependentUpon>modalEditUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Modal\Products\modalAddProducts.resx">
+      <DependentUpon>modalAddProducts.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -309,6 +345,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\icons8-email-15.png" />
+    <None Include="Resources\icons8-peso-symbol-15.png" />
     <None Include="Resources\icons8-user-black-15.png" />
     <None Include="Resources\icons8-lock-151.png" />
     <None Include="Resources\icons8-eye-15.png" />

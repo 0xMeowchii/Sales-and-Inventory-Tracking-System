@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Module Connection
 
-    Public connString = "Data Source=LAPTOP-1CLIFQED\SQLEXPRESS;Initial Catalog=IMS;Integrated Security=True"
+    Public connString = "Data Source=LAPTOP-1CLIFQED\SQLEXPRESS;Initial Catalog=AZTECH;Integrated Security=True"
     Public Connect As New SqlConnection(connString)
     Public Parameters As New List(Of SqlParameter)
     Public Data As DataSet

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class frmAdmin
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,19 +20,19 @@ Partial Class frmAdmin
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.txtSearch = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblTotalAdmin = New System.Windows.Forms.Label()
-        Me.btnEdit = New Guna.UI2.WinForms.Guna2Button()
-        Me.btnDelete = New Guna.UI2.WinForms.Guna2Button()
-        Me.dgvAdmin = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.btnAdd = New Guna.UI2.WinForms.Guna2Button()
-        Me.txtSearch = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.dgvAdmin = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.btnDelete = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnEdit = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel1.SuspendLayout()
         CType(Me.dgvAdmin, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -47,166 +47,7 @@ Partial Class frmAdmin
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(992, 64)
-        Me.Panel1.TabIndex = 0
-        '
-        'Label2
-        '
-        Me.Label2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(67, 0)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(101, 64)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Admin"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lblTotalAdmin
-        '
-        Me.lblTotalAdmin.Dock = System.Windows.Forms.DockStyle.Left
-        Me.lblTotalAdmin.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotalAdmin.Location = New System.Drawing.Point(0, 0)
-        Me.lblTotalAdmin.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblTotalAdmin.Name = "lblTotalAdmin"
-        Me.lblTotalAdmin.Size = New System.Drawing.Size(67, 64)
-        Me.lblTotalAdmin.TabIndex = 0
-        Me.lblTotalAdmin.Text = "0"
-        Me.lblTotalAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'btnEdit
-        '
-        Me.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnEdit.BorderColor = System.Drawing.Color.DodgerBlue
-        Me.btnEdit.BorderRadius = 5
-        Me.btnEdit.BorderThickness = 1
-        Me.btnEdit.CheckedState.Parent = Me.btnEdit
-        Me.btnEdit.CustomImages.Parent = Me.btnEdit
-        Me.btnEdit.FillColor = System.Drawing.Color.Transparent
-        Me.btnEdit.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btnEdit.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.btnEdit.HoverState.FillColor = System.Drawing.Color.DodgerBlue
-        Me.btnEdit.HoverState.ForeColor = System.Drawing.Color.Black
-        Me.btnEdit.HoverState.Parent = Me.btnEdit
-        Me.btnEdit.Location = New System.Drawing.Point(716, 709)
-        Me.btnEdit.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnEdit.Name = "btnEdit"
-        Me.btnEdit.ShadowDecoration.Parent = Me.btnEdit
-        Me.btnEdit.Size = New System.Drawing.Size(119, 36)
-        Me.btnEdit.TabIndex = 1
-        Me.btnEdit.Text = "Edit"
-        '
-        'btnDelete
-        '
-        Me.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnDelete.BorderColor = System.Drawing.Color.Tomato
-        Me.btnDelete.BorderRadius = 5
-        Me.btnDelete.BorderThickness = 1
-        Me.btnDelete.CheckedState.Parent = Me.btnDelete
-        Me.btnDelete.CustomImages.Parent = Me.btnDelete
-        Me.btnDelete.FillColor = System.Drawing.Color.Transparent
-        Me.btnDelete.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btnDelete.ForeColor = System.Drawing.Color.Tomato
-        Me.btnDelete.HoverState.FillColor = System.Drawing.Color.Tomato
-        Me.btnDelete.HoverState.ForeColor = System.Drawing.Color.Black
-        Me.btnDelete.HoverState.Parent = Me.btnDelete
-        Me.btnDelete.Location = New System.Drawing.Point(855, 709)
-        Me.btnDelete.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.ShadowDecoration.Parent = Me.btnDelete
-        Me.btnDelete.Size = New System.Drawing.Size(119, 36)
-        Me.btnDelete.TabIndex = 2
-        Me.btnDelete.Text = "Delete"
-        '
-        'dgvAdmin
-        '
-        Me.dgvAdmin.AllowUserToAddRows = False
-        Me.dgvAdmin.AllowUserToDeleteRows = False
-        Me.dgvAdmin.AllowUserToOrderColumns = True
-        Me.dgvAdmin.AllowUserToResizeColumns = False
-        Me.dgvAdmin.AllowUserToResizeRows = False
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.dgvAdmin.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.dgvAdmin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
-        Me.dgvAdmin.BackgroundColor = System.Drawing.Color.White
-        Me.dgvAdmin.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dgvAdmin.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.dgvAdmin.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvAdmin.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.dgvAdmin.ColumnHeadersHeight = 50
-        Me.dgvAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.SlateBlue
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(99, Byte), Integer), CType(CType(168, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvAdmin.DefaultCellStyle = DataGridViewCellStyle3
-        Me.dgvAdmin.EnableHeadersVisualStyles = False
-        Me.dgvAdmin.GridColor = System.Drawing.Color.White
-        Me.dgvAdmin.Location = New System.Drawing.Point(23, 128)
-        Me.dgvAdmin.Margin = New System.Windows.Forms.Padding(4)
-        Me.dgvAdmin.Name = "dgvAdmin"
-        Me.dgvAdmin.ReadOnly = True
-        Me.dgvAdmin.RowHeadersVisible = False
-        Me.dgvAdmin.RowHeadersWidth = 51
-        Me.dgvAdmin.RowTemplate.Height = 40
-        Me.dgvAdmin.RowTemplate.ReadOnly = True
-        Me.dgvAdmin.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvAdmin.Size = New System.Drawing.Size(951, 549)
-        Me.dgvAdmin.TabIndex = 3
-        Me.dgvAdmin.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
-        Me.dgvAdmin.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
-        Me.dgvAdmin.ThemeStyle.AlternatingRowsStyle.Font = Nothing
-        Me.dgvAdmin.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
-        Me.dgvAdmin.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
-        Me.dgvAdmin.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
-        Me.dgvAdmin.ThemeStyle.BackColor = System.Drawing.Color.White
-        Me.dgvAdmin.ThemeStyle.GridColor = System.Drawing.Color.White
-        Me.dgvAdmin.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.dgvAdmin.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.dgvAdmin.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgvAdmin.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
-        Me.dgvAdmin.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.dgvAdmin.ThemeStyle.HeaderStyle.Height = 50
-        Me.dgvAdmin.ThemeStyle.ReadOnly = True
-        Me.dgvAdmin.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
-        Me.dgvAdmin.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.dgvAdmin.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgvAdmin.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.SlateBlue
-        Me.dgvAdmin.ThemeStyle.RowsStyle.Height = 40
-        Me.dgvAdmin.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(99, Byte), Integer), CType(CType(168, Byte), Integer))
-        Me.dgvAdmin.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White
-        '
-        'btnAdd
-        '
-        Me.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnAdd.BorderColor = System.Drawing.Color.DodgerBlue
-        Me.btnAdd.BorderRadius = 5
-        Me.btnAdd.BorderThickness = 1
-        Me.btnAdd.CheckedState.Parent = Me.btnAdd
-        Me.btnAdd.CustomImages.Parent = Me.btnAdd
-        Me.btnAdd.FillColor = System.Drawing.Color.Transparent
-        Me.btnAdd.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btnAdd.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.btnAdd.HoverState.FillColor = System.Drawing.Color.DodgerBlue
-        Me.btnAdd.HoverState.ForeColor = System.Drawing.Color.Black
-        Me.btnAdd.HoverState.Parent = Me.btnAdd
-        Me.btnAdd.Location = New System.Drawing.Point(817, 84)
-        Me.btnAdd.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.ShadowDecoration.Parent = Me.btnAdd
-        Me.btnAdd.Size = New System.Drawing.Size(156, 36)
-        Me.btnAdd.TabIndex = 5
-        Me.btnAdd.Text = "Add  Account"
+        Me.Panel1.TabIndex = 11
         '
         'txtSearch
         '
@@ -234,16 +75,174 @@ Partial Class frmAdmin
         Me.txtSearch.Size = New System.Drawing.Size(285, 32)
         Me.txtSearch.TabIndex = 3
         '
+        'Label2
+        '
+        Me.Label2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(67, 0)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(101, 64)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Admin"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblTotalAdmin
+        '
+        Me.lblTotalAdmin.Dock = System.Windows.Forms.DockStyle.Left
+        Me.lblTotalAdmin.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalAdmin.Location = New System.Drawing.Point(0, 0)
+        Me.lblTotalAdmin.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTotalAdmin.Name = "lblTotalAdmin"
+        Me.lblTotalAdmin.Size = New System.Drawing.Size(67, 64)
+        Me.lblTotalAdmin.TabIndex = 0
+        Me.lblTotalAdmin.Text = "0"
+        Me.lblTotalAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'btnAdd
+        '
+        Me.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnAdd.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.btnAdd.BorderRadius = 5
+        Me.btnAdd.BorderThickness = 1
+        Me.btnAdd.CheckedState.Parent = Me.btnAdd
+        Me.btnAdd.CustomImages.Parent = Me.btnAdd
+        Me.btnAdd.FillColor = System.Drawing.Color.Transparent
+        Me.btnAdd.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnAdd.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.btnAdd.HoverState.FillColor = System.Drawing.Color.DodgerBlue
+        Me.btnAdd.HoverState.ForeColor = System.Drawing.Color.Black
+        Me.btnAdd.HoverState.Parent = Me.btnAdd
+        Me.btnAdd.Location = New System.Drawing.Point(817, 88)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.ShadowDecoration.Parent = Me.btnAdd
+        Me.btnAdd.Size = New System.Drawing.Size(156, 36)
+        Me.btnAdd.TabIndex = 15
+        Me.btnAdd.Text = "Add  Account"
+        '
+        'dgvAdmin
+        '
+        Me.dgvAdmin.AllowUserToAddRows = False
+        Me.dgvAdmin.AllowUserToDeleteRows = False
+        Me.dgvAdmin.AllowUserToOrderColumns = True
+        Me.dgvAdmin.AllowUserToResizeColumns = False
+        Me.dgvAdmin.AllowUserToResizeRows = False
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        Me.dgvAdmin.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        Me.dgvAdmin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.dgvAdmin.BackgroundColor = System.Drawing.Color.White
+        Me.dgvAdmin.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvAdmin.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.dgvAdmin.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvAdmin.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        Me.dgvAdmin.ColumnHeadersHeight = 50
+        Me.dgvAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.SlateBlue
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(99, Byte), Integer), CType(CType(168, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvAdmin.DefaultCellStyle = DataGridViewCellStyle6
+        Me.dgvAdmin.EnableHeadersVisualStyles = False
+        Me.dgvAdmin.GridColor = System.Drawing.Color.White
+        Me.dgvAdmin.Location = New System.Drawing.Point(23, 138)
+        Me.dgvAdmin.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgvAdmin.Name = "dgvAdmin"
+        Me.dgvAdmin.ReadOnly = True
+        Me.dgvAdmin.RowHeadersVisible = False
+        Me.dgvAdmin.RowHeadersWidth = 51
+        Me.dgvAdmin.RowTemplate.Height = 40
+        Me.dgvAdmin.RowTemplate.ReadOnly = True
+        Me.dgvAdmin.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvAdmin.Size = New System.Drawing.Size(951, 549)
+        Me.dgvAdmin.TabIndex = 14
+        Me.dgvAdmin.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
+        Me.dgvAdmin.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.dgvAdmin.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        Me.dgvAdmin.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
+        Me.dgvAdmin.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
+        Me.dgvAdmin.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
+        Me.dgvAdmin.ThemeStyle.BackColor = System.Drawing.Color.White
+        Me.dgvAdmin.ThemeStyle.GridColor = System.Drawing.Color.White
+        Me.dgvAdmin.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.dgvAdmin.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgvAdmin.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgvAdmin.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
+        Me.dgvAdmin.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.dgvAdmin.ThemeStyle.HeaderStyle.Height = 50
+        Me.dgvAdmin.ThemeStyle.ReadOnly = True
+        Me.dgvAdmin.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.dgvAdmin.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.dgvAdmin.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgvAdmin.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.SlateBlue
+        Me.dgvAdmin.ThemeStyle.RowsStyle.Height = 40
+        Me.dgvAdmin.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(99, Byte), Integer), CType(CType(168, Byte), Integer))
+        Me.dgvAdmin.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White
+        '
+        'btnDelete
+        '
+        Me.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnDelete.BorderColor = System.Drawing.Color.Tomato
+        Me.btnDelete.BorderRadius = 5
+        Me.btnDelete.BorderThickness = 1
+        Me.btnDelete.CheckedState.Parent = Me.btnDelete
+        Me.btnDelete.CustomImages.Parent = Me.btnDelete
+        Me.btnDelete.FillColor = System.Drawing.Color.Transparent
+        Me.btnDelete.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnDelete.ForeColor = System.Drawing.Color.Tomato
+        Me.btnDelete.HoverState.FillColor = System.Drawing.Color.Tomato
+        Me.btnDelete.HoverState.ForeColor = System.Drawing.Color.Black
+        Me.btnDelete.HoverState.Parent = Me.btnDelete
+        Me.btnDelete.Location = New System.Drawing.Point(855, 715)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.ShadowDecoration.Parent = Me.btnDelete
+        Me.btnDelete.Size = New System.Drawing.Size(119, 36)
+        Me.btnDelete.TabIndex = 13
+        Me.btnDelete.Text = "Delete"
+        '
+        'btnEdit
+        '
+        Me.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnEdit.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.btnEdit.BorderRadius = 5
+        Me.btnEdit.BorderThickness = 1
+        Me.btnEdit.CheckedState.Parent = Me.btnEdit
+        Me.btnEdit.CustomImages.Parent = Me.btnEdit
+        Me.btnEdit.FillColor = System.Drawing.Color.Transparent
+        Me.btnEdit.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnEdit.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.btnEdit.HoverState.FillColor = System.Drawing.Color.DodgerBlue
+        Me.btnEdit.HoverState.ForeColor = System.Drawing.Color.Black
+        Me.btnEdit.HoverState.Parent = Me.btnEdit
+        Me.btnEdit.Location = New System.Drawing.Point(716, 715)
+        Me.btnEdit.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnEdit.Name = "btnEdit"
+        Me.btnEdit.ShadowDecoration.Parent = Me.btnEdit
+        Me.btnEdit.Size = New System.Drawing.Size(119, 36)
+        Me.btnEdit.TabIndex = 12
+        Me.btnEdit.Text = "Edit"
+        '
         'frmAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.dgvAdmin)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnEdit)
-        Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmAdmin"
         Me.Size = New System.Drawing.Size(992, 764)
         Me.Panel1.ResumeLayout(False)
@@ -253,11 +252,11 @@ Partial Class frmAdmin
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents lblTotalAdmin As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents btnEdit As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents btnDelete As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents txtSearch As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents dgvAdmin As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents Label2 As Label
+    Friend WithEvents lblTotalAdmin As Label
     Friend WithEvents btnAdd As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents dgvAdmin As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents btnDelete As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnEdit As Guna.UI2.WinForms.Guna2Button
 End Class
