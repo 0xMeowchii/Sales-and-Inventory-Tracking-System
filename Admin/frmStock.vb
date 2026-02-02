@@ -23,7 +23,7 @@
     End Sub
     Public Sub fetchMobileDevices()
         Try
-            Connection.Query("SELECT * FROM MobileDevices")
+            Connection.Query("SELECT * FROM Products WHERE ProductType = 'Mobile Devices'")
 
             If Connection.Datacount > 0 Then
                 dgvStock.DataSource = Connection.Data.Tables(0)
@@ -41,7 +41,7 @@
 
     Public Sub fetchPhoneAccessories()
         Try
-            Connection.Query("SELECT * FROM PhoneAccessories")
+            Connection.Query("SELECT * FROM Products WHERE ProductType = 'Phone Accessories'")
 
             If Connection.Datacount > 0 Then
                 dgvStock.DataSource = Connection.Data.Tables(0)
@@ -59,7 +59,7 @@
 
     Public Sub fetchAudioDevices()
         Try
-            Connection.Query("SELECT * FROM AudioDevices")
+            Connection.Query("SELECT * FROM Products WHERE ProductType = 'Audio Devices'")
 
             If Connection.Datacount > 0 Then
                 dgvStock.DataSource = Connection.Data.Tables(0)
@@ -77,7 +77,7 @@
 
     Public Sub fetchStorageDevices()
         Try
-            Connection.Query("SELECT * FROM StorageDevices")
+            Connection.Query("SELECT * FROM Products WHERE ProductType = 'Storage Devices'")
 
             If Connection.Datacount > 0 Then
                 dgvStock.DataSource = Connection.Data.Tables(0)
@@ -164,7 +164,7 @@
         lblHigh.Text = "0"
     End Sub
 
-    Private Sub dgvStock_CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles dgvStock.CellFormatting
+    Private Sub dgvStock_CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs)
         Try
             If dgvStock.Columns(e.ColumnIndex).Name = "Quantity" OrElse e.ColumnIndex >= 0 Then
                 If dgvStock.Rows(e.RowIndex).Cells("ItemName").Value IsNot Nothing Then
@@ -209,7 +209,7 @@
         LoadCategoriesToComboBox()
     End Sub
 
-    Private Sub dgvStock_SelectionChanged(sender As Object, e As EventArgs) Handles dgvStock.SelectionChanged
+    Private Sub dgvStock_SelectionChanged(sender As Object, e As EventArgs)
         dgvStock.ClearSelection()
     End Sub
 End Class

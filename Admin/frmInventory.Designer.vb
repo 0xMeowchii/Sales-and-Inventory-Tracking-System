@@ -22,9 +22,9 @@ Partial Class frmInventory
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.txtSearch = New Guna.UI2.WinForms.Guna2TextBox()
         Me.lblName = New System.Windows.Forms.Label()
@@ -37,6 +37,7 @@ Partial Class frmInventory
         Me.btnPhoneAcce = New Guna.UI2.WinForms.Guna2Button()
         Me.btnAudio = New Guna.UI2.WinForms.Guna2Button()
         Me.btnStorageDevices = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnAll = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel1.SuspendLayout()
         CType(Me.dgvInventory, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -132,32 +133,32 @@ Partial Class frmInventory
         Me.dgvInventory.AllowUserToOrderColumns = True
         Me.dgvInventory.AllowUserToResizeColumns = False
         Me.dgvInventory.AllowUserToResizeRows = False
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.dgvInventory.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.White
+        Me.dgvInventory.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
         Me.dgvInventory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.dgvInventory.BackgroundColor = System.Drawing.Color.White
         Me.dgvInventory.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvInventory.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.dgvInventory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvInventory.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer))
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvInventory.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
         Me.dgvInventory.ColumnHeadersHeight = 50
         Me.dgvInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.SlateBlue
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(99, Byte), Integer), CType(CType(168, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvInventory.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.SlateBlue
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(99, Byte), Integer), CType(CType(168, Byte), Integer))
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvInventory.DefaultCellStyle = DataGridViewCellStyle15
         Me.dgvInventory.EnableHeadersVisualStyles = False
         Me.dgvInventory.GridColor = System.Drawing.Color.White
         Me.dgvInventory.Location = New System.Drawing.Point(22, 129)
@@ -252,7 +253,7 @@ Partial Class frmInventory
         Me.btnMobileDevices.HoverState.FillColor = System.Drawing.Color.MediumSlateBlue
         Me.btnMobileDevices.HoverState.ForeColor = System.Drawing.Color.White
         Me.btnMobileDevices.HoverState.Parent = Me.btnMobileDevices
-        Me.btnMobileDevices.Location = New System.Drawing.Point(22, 79)
+        Me.btnMobileDevices.Location = New System.Drawing.Point(102, 79)
         Me.btnMobileDevices.Margin = New System.Windows.Forms.Padding(4)
         Me.btnMobileDevices.Name = "btnMobileDevices"
         Me.btnMobileDevices.ShadowDecoration.Parent = Me.btnMobileDevices
@@ -274,7 +275,7 @@ Partial Class frmInventory
         Me.btnPhoneAcce.HoverState.FillColor = System.Drawing.Color.MediumSlateBlue
         Me.btnPhoneAcce.HoverState.ForeColor = System.Drawing.Color.White
         Me.btnPhoneAcce.HoverState.Parent = Me.btnPhoneAcce
-        Me.btnPhoneAcce.Location = New System.Drawing.Point(174, 79)
+        Me.btnPhoneAcce.Location = New System.Drawing.Point(254, 79)
         Me.btnPhoneAcce.Margin = New System.Windows.Forms.Padding(4)
         Me.btnPhoneAcce.Name = "btnPhoneAcce"
         Me.btnPhoneAcce.ShadowDecoration.Parent = Me.btnPhoneAcce
@@ -296,7 +297,7 @@ Partial Class frmInventory
         Me.btnAudio.HoverState.FillColor = System.Drawing.Color.MediumSlateBlue
         Me.btnAudio.HoverState.ForeColor = System.Drawing.Color.White
         Me.btnAudio.HoverState.Parent = Me.btnAudio
-        Me.btnAudio.Location = New System.Drawing.Point(326, 79)
+        Me.btnAudio.Location = New System.Drawing.Point(406, 79)
         Me.btnAudio.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAudio.Name = "btnAudio"
         Me.btnAudio.ShadowDecoration.Parent = Me.btnAudio
@@ -318,7 +319,7 @@ Partial Class frmInventory
         Me.btnStorageDevices.HoverState.FillColor = System.Drawing.Color.MediumSlateBlue
         Me.btnStorageDevices.HoverState.ForeColor = System.Drawing.Color.White
         Me.btnStorageDevices.HoverState.Parent = Me.btnStorageDevices
-        Me.btnStorageDevices.Location = New System.Drawing.Point(464, 79)
+        Me.btnStorageDevices.Location = New System.Drawing.Point(544, 79)
         Me.btnStorageDevices.Margin = New System.Windows.Forms.Padding(4)
         Me.btnStorageDevices.Name = "btnStorageDevices"
         Me.btnStorageDevices.ShadowDecoration.Parent = Me.btnStorageDevices
@@ -326,10 +327,33 @@ Partial Class frmInventory
         Me.btnStorageDevices.TabIndex = 13
         Me.btnStorageDevices.Text = "Storage Devices"
         '
+        'btnAll
+        '
+        Me.btnAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnAll.BorderColor = System.Drawing.Color.MediumSlateBlue
+        Me.btnAll.BorderRadius = 5
+        Me.btnAll.BorderThickness = 1
+        Me.btnAll.CheckedState.Parent = Me.btnAll
+        Me.btnAll.CustomImages.Parent = Me.btnAll
+        Me.btnAll.FillColor = System.Drawing.Color.Transparent
+        Me.btnAll.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnAll.ForeColor = System.Drawing.Color.MediumSlateBlue
+        Me.btnAll.HoverState.FillColor = System.Drawing.Color.MediumSlateBlue
+        Me.btnAll.HoverState.ForeColor = System.Drawing.Color.White
+        Me.btnAll.HoverState.Parent = Me.btnAll
+        Me.btnAll.Location = New System.Drawing.Point(22, 79)
+        Me.btnAll.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAll.Name = "btnAll"
+        Me.btnAll.ShadowDecoration.Parent = Me.btnAll
+        Me.btnAll.Size = New System.Drawing.Size(72, 36)
+        Me.btnAll.TabIndex = 14
+        Me.btnAll.Text = "All"
+        '
         'frmInventory
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Controls.Add(Me.btnAll)
         Me.Controls.Add(Me.btnStorageDevices)
         Me.Controls.Add(Me.btnAudio)
         Me.Controls.Add(Me.btnPhoneAcce)
@@ -360,4 +384,5 @@ Partial Class frmInventory
     Friend WithEvents btnPhoneAcce As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnAudio As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnStorageDevices As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnAll As Guna.UI2.WinForms.Guna2Button
 End Class

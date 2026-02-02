@@ -156,7 +156,7 @@ Partial Class modalAddProducts
         Me.txtQuantity.PlaceholderText = ""
         Me.txtQuantity.SelectedText = ""
         Me.txtQuantity.ShadowDecoration.Parent = Me.txtQuantity
-        Me.txtQuantity.Size = New System.Drawing.Size(217, 33)
+        Me.txtQuantity.Size = New System.Drawing.Size(239, 33)
         Me.txtQuantity.TabIndex = 23
         '
         'Label3
@@ -183,7 +183,7 @@ Partial Class modalAddProducts
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(283, 173)
+        Me.Label5.Location = New System.Drawing.Point(284, 173)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(104, 28)
         Me.Label5.TabIndex = 26
@@ -210,25 +210,26 @@ Partial Class modalAddProducts
         Me.txtNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.txtNumber.DisabledState.Parent = Me.txtNumber
         Me.txtNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtNumber.Enabled = False
         Me.txtNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtNumber.FocusedState.Parent = Me.txtNumber
         Me.txtNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtNumber.HoverState.Parent = Me.txtNumber
-        Me.txtNumber.Location = New System.Drawing.Point(288, 297)
+        Me.txtNumber.Location = New System.Drawing.Point(551, 391)
         Me.txtNumber.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtNumber.Name = "txtNumber"
         Me.txtNumber.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtNumber.PlaceholderText = ""
         Me.txtNumber.SelectedText = ""
         Me.txtNumber.ShadowDecoration.Parent = Me.txtNumber
-        Me.txtNumber.Size = New System.Drawing.Size(217, 36)
+        Me.txtNumber.Size = New System.Drawing.Size(215, 36)
         Me.txtNumber.TabIndex = 31
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(283, 265)
+        Me.Label7.Location = New System.Drawing.Point(546, 355)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(148, 28)
         Me.Label7.TabIndex = 30
@@ -248,7 +249,7 @@ Partial Class modalAddProducts
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(284, 355)
+        Me.Label9.Location = New System.Drawing.Point(282, 279)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(152, 28)
         Me.Label9.TabIndex = 34
@@ -258,7 +259,7 @@ Partial Class modalAddProducts
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(35, 444)
+        Me.Label10.Location = New System.Drawing.Point(280, 350)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(173, 28)
         Me.Label10.TabIndex = 36
@@ -310,7 +311,7 @@ Partial Class modalAddProducts
         Me.btnSelect.HoverState.FillColor = System.Drawing.Color.LimeGreen
         Me.btnSelect.HoverState.ForeColor = System.Drawing.Color.White
         Me.btnSelect.HoverState.Parent = Me.btnSelect
-        Me.btnSelect.Location = New System.Drawing.Point(667, 93)
+        Me.btnSelect.Location = New System.Drawing.Point(667, 101)
         Me.btnSelect.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSelect.Name = "btnSelect"
         Me.btnSelect.ShadowDecoration.Parent = Me.btnSelect
@@ -395,10 +396,10 @@ Partial Class modalAddProducts
         Me.cboSupplier.HoverState.Parent = Me.cboSupplier
         Me.cboSupplier.ItemHeight = 30
         Me.cboSupplier.ItemsAppearance.Parent = Me.cboSupplier
-        Me.cboSupplier.Location = New System.Drawing.Point(287, 387)
+        Me.cboSupplier.Location = New System.Drawing.Point(285, 311)
         Me.cboSupplier.Name = "cboSupplier"
         Me.cboSupplier.ShadowDecoration.Parent = Me.cboSupplier
-        Me.cboSupplier.Size = New System.Drawing.Size(216, 36)
+        Me.cboSupplier.Size = New System.Drawing.Size(241, 36)
         Me.cboSupplier.TabIndex = 45
         '
         'cboType
@@ -464,10 +465,10 @@ Partial Class modalAddProducts
         Me.cboCondition.ItemHeight = 30
         Me.cboCondition.Items.AddRange(New Object() {"Brand New", "2nd Hand"})
         Me.cboCondition.ItemsAppearance.Parent = Me.cboCondition
-        Me.cboCondition.Location = New System.Drawing.Point(288, 213)
+        Me.cboCondition.Location = New System.Drawing.Point(289, 213)
         Me.cboCondition.Name = "cboCondition"
         Me.cboCondition.ShadowDecoration.Parent = Me.cboCondition
-        Me.cboCondition.Size = New System.Drawing.Size(216, 36)
+        Me.cboCondition.Size = New System.Drawing.Size(237, 36)
         Me.cboCondition.StartIndex = 0
         Me.cboCondition.TabIndex = 48
         '
@@ -488,7 +489,7 @@ Partial Class modalAddProducts
         Me.cboLocation.ItemHeight = 30
         Me.cboLocation.Items.AddRange(New Object() {"Inventory Shelf A", "Inventory Shelf B", "Storage Room A", "Storage Room B"})
         Me.cboLocation.ItemsAppearance.Parent = Me.cboLocation
-        Me.cboLocation.Location = New System.Drawing.Point(40, 485)
+        Me.cboLocation.Location = New System.Drawing.Point(285, 391)
         Me.cboLocation.Name = "cboLocation"
         Me.cboLocation.ShadowDecoration.Parent = Me.cboLocation
         Me.cboLocation.Size = New System.Drawing.Size(241, 36)

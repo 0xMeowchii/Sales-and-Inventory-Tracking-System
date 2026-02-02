@@ -30,7 +30,7 @@ Partial Class modalEditProducts
         Me.cboBrand = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.cboType = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.cboSupplier = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.btnConfirm = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnUpdate = New Guna.UI2.WinForms.Guna2Button()
         Me.btnSelect = New Guna.UI2.WinForms.Guna2Button()
         Me.btnCancel = New Guna.UI2.WinForms.Guna2Button()
         Me.picProduct = New Guna.UI2.WinForms.Guna2PictureBox()
@@ -92,7 +92,7 @@ Partial Class modalEditProducts
         Me.cboLocation.ItemHeight = 30
         Me.cboLocation.Items.AddRange(New Object() {"Inventory Shelf A", "Inventory Shelf B", "Storage Room A", "Storage Room B"})
         Me.cboLocation.ItemsAppearance.Parent = Me.cboLocation
-        Me.cboLocation.Location = New System.Drawing.Point(40, 481)
+        Me.cboLocation.Location = New System.Drawing.Point(285, 392)
         Me.cboLocation.Name = "cboLocation"
         Me.cboLocation.ShadowDecoration.Parent = Me.cboLocation
         Me.cboLocation.Size = New System.Drawing.Size(241, 36)
@@ -119,7 +119,7 @@ Partial Class modalEditProducts
         Me.cboCondition.Location = New System.Drawing.Point(288, 209)
         Me.cboCondition.Name = "cboCondition"
         Me.cboCondition.ShadowDecoration.Parent = Me.cboCondition
-        Me.cboCondition.Size = New System.Drawing.Size(216, 36)
+        Me.cboCondition.Size = New System.Drawing.Size(238, 36)
         Me.cboCondition.StartIndex = 0
         Me.cboCondition.TabIndex = 72
         '
@@ -185,33 +185,33 @@ Partial Class modalEditProducts
         Me.cboSupplier.HoverState.Parent = Me.cboSupplier
         Me.cboSupplier.ItemHeight = 30
         Me.cboSupplier.ItemsAppearance.Parent = Me.cboSupplier
-        Me.cboSupplier.Location = New System.Drawing.Point(287, 383)
+        Me.cboSupplier.Location = New System.Drawing.Point(283, 295)
         Me.cboSupplier.Name = "cboSupplier"
         Me.cboSupplier.ShadowDecoration.Parent = Me.cboSupplier
-        Me.cboSupplier.Size = New System.Drawing.Size(216, 36)
+        Me.cboSupplier.Size = New System.Drawing.Size(243, 36)
         Me.cboSupplier.TabIndex = 69
         '
-        'btnConfirm
+        'btnUpdate
         '
-        Me.btnConfirm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnConfirm.BorderColor = System.Drawing.Color.DodgerBlue
-        Me.btnConfirm.BorderRadius = 5
-        Me.btnConfirm.BorderThickness = 1
-        Me.btnConfirm.CheckedState.Parent = Me.btnConfirm
-        Me.btnConfirm.CustomImages.Parent = Me.btnConfirm
-        Me.btnConfirm.FillColor = System.Drawing.Color.Transparent
-        Me.btnConfirm.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btnConfirm.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.btnConfirm.HoverState.FillColor = System.Drawing.Color.DodgerBlue
-        Me.btnConfirm.HoverState.ForeColor = System.Drawing.Color.Black
-        Me.btnConfirm.HoverState.Parent = Me.btnConfirm
-        Me.btnConfirm.Location = New System.Drawing.Point(667, 494)
-        Me.btnConfirm.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnConfirm.Name = "btnConfirm"
-        Me.btnConfirm.ShadowDecoration.Parent = Me.btnConfirm
-        Me.btnConfirm.Size = New System.Drawing.Size(106, 36)
-        Me.btnConfirm.TabIndex = 68
-        Me.btnConfirm.Text = "Confirm"
+        Me.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnUpdate.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.btnUpdate.BorderRadius = 5
+        Me.btnUpdate.BorderThickness = 1
+        Me.btnUpdate.CheckedState.Parent = Me.btnUpdate
+        Me.btnUpdate.CustomImages.Parent = Me.btnUpdate
+        Me.btnUpdate.FillColor = System.Drawing.Color.Transparent
+        Me.btnUpdate.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnUpdate.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.btnUpdate.HoverState.FillColor = System.Drawing.Color.DodgerBlue
+        Me.btnUpdate.HoverState.ForeColor = System.Drawing.Color.Black
+        Me.btnUpdate.HoverState.Parent = Me.btnUpdate
+        Me.btnUpdate.Location = New System.Drawing.Point(667, 494)
+        Me.btnUpdate.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.ShadowDecoration.Parent = Me.btnUpdate
+        Me.btnUpdate.Size = New System.Drawing.Size(106, 36)
+        Me.btnUpdate.TabIndex = 68
+        Me.btnUpdate.Text = "Update"
         '
         'btnSelect
         '
@@ -227,7 +227,7 @@ Partial Class modalEditProducts
         Me.btnSelect.HoverState.FillColor = System.Drawing.Color.LimeGreen
         Me.btnSelect.HoverState.ForeColor = System.Drawing.Color.White
         Me.btnSelect.HoverState.Parent = Me.btnSelect
-        Me.btnSelect.Location = New System.Drawing.Point(667, 89)
+        Me.btnSelect.Location = New System.Drawing.Point(667, 97)
         Me.btnSelect.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSelect.Name = "btnSelect"
         Me.btnSelect.ShadowDecoration.Parent = Me.btnSelect
@@ -283,7 +283,7 @@ Partial Class modalEditProducts
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(35, 440)
+        Me.Label10.Location = New System.Drawing.Point(280, 351)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(173, 28)
         Me.Label10.TabIndex = 63
@@ -293,7 +293,7 @@ Partial Class modalEditProducts
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(284, 351)
+        Me.Label9.Location = New System.Drawing.Point(280, 263)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(152, 28)
         Me.Label9.TabIndex = 62
@@ -347,11 +347,12 @@ Partial Class modalEditProducts
         Me.txtNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.txtNumber.DisabledState.Parent = Me.txtNumber
         Me.txtNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtNumber.Enabled = False
         Me.txtNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtNumber.FocusedState.Parent = Me.txtNumber
         Me.txtNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtNumber.HoverState.Parent = Me.txtNumber
-        Me.txtNumber.Location = New System.Drawing.Point(288, 293)
+        Me.txtNumber.Location = New System.Drawing.Point(551, 383)
         Me.txtNumber.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtNumber.Name = "txtNumber"
         Me.txtNumber.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -413,7 +414,7 @@ Partial Class modalEditProducts
         Me.txtQuantity.PlaceholderText = ""
         Me.txtQuantity.SelectedText = ""
         Me.txtQuantity.ShadowDecoration.Parent = Me.txtQuantity
-        Me.txtQuantity.Size = New System.Drawing.Size(217, 33)
+        Me.txtQuantity.Size = New System.Drawing.Size(239, 33)
         Me.txtQuantity.TabIndex = 54
         '
         'Label3
@@ -489,7 +490,7 @@ Partial Class modalEditProducts
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(283, 261)
+        Me.Label7.Location = New System.Drawing.Point(546, 351)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(148, 28)
         Me.Label7.TabIndex = 58
@@ -505,7 +506,7 @@ Partial Class modalEditProducts
         Me.Controls.Add(Me.cboBrand)
         Me.Controls.Add(Me.cboType)
         Me.Controls.Add(Me.cboSupplier)
-        Me.Controls.Add(Me.btnConfirm)
+        Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.btnSelect)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.picProduct)
@@ -526,6 +527,7 @@ Partial Class modalEditProducts
         Me.Controls.Add(Me.Label7)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "modalEditProducts"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "modalEditProducts"
         CType(Me.picProduct, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
@@ -540,7 +542,7 @@ Partial Class modalEditProducts
     Friend WithEvents cboBrand As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents cboType As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents cboSupplier As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents btnConfirm As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnUpdate As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnSelect As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnCancel As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents picProduct As Guna.UI2.WinForms.Guna2PictureBox

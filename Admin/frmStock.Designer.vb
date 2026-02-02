@@ -25,57 +25,36 @@ Partial Class frmStock
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.cboCategory = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.txtSearch = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnManageStock = New Guna.UI2.WinForms.Guna2Button()
-        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblCritical = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lblNormal = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.lblHigh = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.lblNormal = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.lblCritical = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblHigh = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.dgvStock = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.Panel3.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        Me.Guna2Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
+        Me.Guna2Panel2.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
-        Me.Guna2Panel2.SuspendLayout()
-        Me.Guna2Panel1.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         CType(Me.dgvStock, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
-        Me.Panel1.Size = New System.Drawing.Size(992, 52)
-        Me.Panel1.TabIndex = 0
-        '
-        'Label1
-        '
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(25, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(320, 52)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Stock Level:"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Panel2
         '
@@ -171,15 +150,68 @@ Partial Class frmStock
         Me.btnManageStock.TabIndex = 6
         Me.btnManageStock.Text = "Manage Stock"
         '
-        'Panel3
+        'Label1
         '
-        Me.Panel3.Controls.Add(Me.Panel4)
-        Me.Panel3.Controls.Add(Me.Guna2Panel1)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel3.Location = New System.Drawing.Point(25, 5)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(367, 90)
-        Me.Panel3.TabIndex = 0
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(25, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(320, 52)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Stock Level:"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
+        Me.Panel1.Size = New System.Drawing.Size(992, 52)
+        Me.Panel1.TabIndex = 0
+        '
+        'Guna2Panel1
+        '
+        Me.Guna2Panel1.BorderColor = System.Drawing.Color.Red
+        Me.Guna2Panel1.BorderRadius = 2
+        Me.Guna2Panel1.Controls.Add(Me.lblCritical)
+        Me.Guna2Panel1.Controls.Add(Me.Label2)
+        Me.Guna2Panel1.CustomBorderColor = System.Drawing.Color.Red
+        Me.Guna2Panel1.CustomBorderThickness = New System.Windows.Forms.Padding(4)
+        Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(5)
+        Me.Guna2Panel1.Name = "Guna2Panel1"
+        Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
+        Me.Guna2Panel1.Size = New System.Drawing.Size(90, 90)
+        Me.Guna2Panel1.TabIndex = 1
+        '
+        'Label2
+        '
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Red
+        Me.Label2.Location = New System.Drawing.Point(0, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(90, 40)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Critical"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblCritical
+        '
+        Me.lblCritical.BackColor = System.Drawing.Color.Transparent
+        Me.lblCritical.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblCritical.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCritical.ForeColor = System.Drawing.Color.Red
+        Me.lblCritical.Location = New System.Drawing.Point(0, 40)
+        Me.lblCritical.Name = "lblCritical"
+        Me.lblCritical.Size = New System.Drawing.Size(90, 50)
+        Me.lblCritical.TabIndex = 1
+        Me.lblCritical.Text = "0"
+        Me.lblCritical.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Panel4
         '
@@ -191,6 +223,48 @@ Partial Class frmStock
         Me.Panel4.Padding = New System.Windows.Forms.Padding(25, 0, 0, 0)
         Me.Panel4.Size = New System.Drawing.Size(264, 90)
         Me.Panel4.TabIndex = 2
+        '
+        'Guna2Panel2
+        '
+        Me.Guna2Panel2.BorderColor = System.Drawing.Color.Transparent
+        Me.Guna2Panel2.BorderRadius = 2
+        Me.Guna2Panel2.Controls.Add(Me.lblNormal)
+        Me.Guna2Panel2.Controls.Add(Me.Label5)
+        Me.Guna2Panel2.CustomBorderColor = System.Drawing.Color.Orange
+        Me.Guna2Panel2.CustomBorderThickness = New System.Windows.Forms.Padding(4)
+        Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Guna2Panel2.Location = New System.Drawing.Point(25, 0)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(5)
+        Me.Guna2Panel2.Name = "Guna2Panel2"
+        Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
+        Me.Guna2Panel2.Size = New System.Drawing.Size(90, 90)
+        Me.Guna2Panel2.TabIndex = 2
+        '
+        'Label5
+        '
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.Orange
+        Me.Label5.Location = New System.Drawing.Point(0, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(90, 40)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = "Low"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblNormal
+        '
+        Me.lblNormal.BackColor = System.Drawing.Color.Transparent
+        Me.lblNormal.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblNormal.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNormal.ForeColor = System.Drawing.Color.Orange
+        Me.lblNormal.Location = New System.Drawing.Point(0, 40)
+        Me.lblNormal.Name = "lblNormal"
+        Me.lblNormal.Size = New System.Drawing.Size(90, 50)
+        Me.lblNormal.TabIndex = 3
+        Me.lblNormal.Text = "0"
+        Me.lblNormal.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Panel5
         '
@@ -218,19 +292,6 @@ Partial Class frmStock
         Me.Guna2Panel3.Size = New System.Drawing.Size(90, 90)
         Me.Guna2Panel3.TabIndex = 3
         '
-        'lblHigh
-        '
-        Me.lblHigh.BackColor = System.Drawing.Color.Transparent
-        Me.lblHigh.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblHigh.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHigh.ForeColor = System.Drawing.Color.Green
-        Me.lblHigh.Location = New System.Drawing.Point(0, 40)
-        Me.lblHigh.Name = "lblHigh"
-        Me.lblHigh.Size = New System.Drawing.Size(90, 50)
-        Me.lblHigh.TabIndex = 3
-        Me.lblHigh.Text = "0"
-        Me.lblHigh.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
         'Label7
         '
         Me.Label7.BackColor = System.Drawing.Color.Transparent
@@ -244,89 +305,28 @@ Partial Class frmStock
         Me.Label7.Text = "Normal"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Guna2Panel2
+        'lblHigh
         '
-        Me.Guna2Panel2.BorderColor = System.Drawing.Color.Transparent
-        Me.Guna2Panel2.BorderRadius = 2
-        Me.Guna2Panel2.Controls.Add(Me.lblNormal)
-        Me.Guna2Panel2.Controls.Add(Me.Label5)
-        Me.Guna2Panel2.CustomBorderColor = System.Drawing.Color.Orange
-        Me.Guna2Panel2.CustomBorderThickness = New System.Windows.Forms.Padding(4)
-        Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Guna2Panel2.Location = New System.Drawing.Point(25, 0)
-        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(5)
-        Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
-        Me.Guna2Panel2.Size = New System.Drawing.Size(90, 90)
-        Me.Guna2Panel2.TabIndex = 2
+        Me.lblHigh.BackColor = System.Drawing.Color.Transparent
+        Me.lblHigh.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblHigh.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHigh.ForeColor = System.Drawing.Color.Green
+        Me.lblHigh.Location = New System.Drawing.Point(0, 40)
+        Me.lblHigh.Name = "lblHigh"
+        Me.lblHigh.Size = New System.Drawing.Size(90, 50)
+        Me.lblHigh.TabIndex = 3
+        Me.lblHigh.Text = "0"
+        Me.lblHigh.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'lblNormal
+        'Panel3
         '
-        Me.lblNormal.BackColor = System.Drawing.Color.Transparent
-        Me.lblNormal.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblNormal.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNormal.ForeColor = System.Drawing.Color.Orange
-        Me.lblNormal.Location = New System.Drawing.Point(0, 40)
-        Me.lblNormal.Name = "lblNormal"
-        Me.lblNormal.Size = New System.Drawing.Size(90, 50)
-        Me.lblNormal.TabIndex = 3
-        Me.lblNormal.Text = "0"
-        Me.lblNormal.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label5
-        '
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.Orange
-        Me.Label5.Location = New System.Drawing.Point(0, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(90, 40)
-        Me.Label5.TabIndex = 2
-        Me.Label5.Text = "Low"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Guna2Panel1
-        '
-        Me.Guna2Panel1.BorderColor = System.Drawing.Color.Red
-        Me.Guna2Panel1.BorderRadius = 2
-        Me.Guna2Panel1.Controls.Add(Me.lblCritical)
-        Me.Guna2Panel1.Controls.Add(Me.Label2)
-        Me.Guna2Panel1.CustomBorderColor = System.Drawing.Color.Red
-        Me.Guna2Panel1.CustomBorderThickness = New System.Windows.Forms.Padding(4)
-        Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(5)
-        Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
-        Me.Guna2Panel1.Size = New System.Drawing.Size(90, 90)
-        Me.Guna2Panel1.TabIndex = 1
-        '
-        'lblCritical
-        '
-        Me.lblCritical.BackColor = System.Drawing.Color.Transparent
-        Me.lblCritical.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblCritical.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCritical.ForeColor = System.Drawing.Color.Red
-        Me.lblCritical.Location = New System.Drawing.Point(0, 40)
-        Me.lblCritical.Name = "lblCritical"
-        Me.lblCritical.Size = New System.Drawing.Size(90, 50)
-        Me.lblCritical.TabIndex = 1
-        Me.lblCritical.Text = "0"
-        Me.lblCritical.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label2
-        '
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Red
-        Me.Label2.Location = New System.Drawing.Point(0, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(90, 40)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Critical"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Panel3.Controls.Add(Me.Panel4)
+        Me.Panel3.Controls.Add(Me.Guna2Panel1)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel3.Location = New System.Drawing.Point(25, 5)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(367, 90)
+        Me.Panel3.TabIndex = 0
         '
         'dgvStock
         '
@@ -363,9 +363,8 @@ Partial Class frmStock
         Me.dgvStock.DefaultCellStyle = DataGridViewCellStyle3
         Me.dgvStock.EnableHeadersVisualStyles = False
         Me.dgvStock.GridColor = System.Drawing.Color.White
-        Me.dgvStock.Location = New System.Drawing.Point(19, 174)
+        Me.dgvStock.Location = New System.Drawing.Point(19, 175)
         Me.dgvStock.Margin = New System.Windows.Forms.Padding(4)
-        Me.dgvStock.MultiSelect = False
         Me.dgvStock.Name = "dgvStock"
         Me.dgvStock.ReadOnly = True
         Me.dgvStock.RowHeadersVisible = False
@@ -374,7 +373,7 @@ Partial Class frmStock
         Me.dgvStock.RowTemplate.ReadOnly = True
         Me.dgvStock.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvStock.Size = New System.Drawing.Size(960, 573)
-        Me.dgvStock.TabIndex = 4
+        Me.dgvStock.TabIndex = 10
         Me.dgvStock.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.dgvStock.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.dgvStock.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -407,38 +406,37 @@ Partial Class frmStock
         Me.Controls.Add(Me.Panel1)
         Me.Name = "frmStock"
         Me.Size = New System.Drawing.Size(992, 764)
-        Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
+        Me.Guna2Panel1.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
+        Me.Guna2Panel2.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.Guna2Panel3.ResumeLayout(False)
-        Me.Guna2Panel2.ResumeLayout(False)
-        Me.Guna2Panel1.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
         CType(Me.dgvStock, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Panel5 As Panel
-    Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents lblHigh As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents lblNormal As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents lblCritical As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents btnManageStock As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Label3 As Label
     Friend WithEvents cboCategory As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents txtSearch As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents Panel5 As Panel
+    Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents lblHigh As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents lblNormal As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents lblCritical As Label
+    Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents Panel1 As Panel
     Friend WithEvents dgvStock As Guna.UI2.WinForms.Guna2DataGridView
 End Class

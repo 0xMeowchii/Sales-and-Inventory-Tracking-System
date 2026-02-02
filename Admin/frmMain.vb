@@ -31,13 +31,6 @@
         End If
     End Sub
 
-    Private Sub btnStock_Click(sender As Object, e As EventArgs)
-        HideMenu()
-        lblTitle.Text = "STOCK MANAGEMENT"
-        FrmStock1.Visible = True
-        FrmStock1.BringToFront()
-    End Sub
-
     Private Sub btnAdmin_Click(sender As Object, e As EventArgs) Handles btnAdmin.Click
         HideMenu()
         lblTitle.Text = "USERS MANAGEMENT"
@@ -67,6 +60,7 @@
     Private Sub btnInv_Click(sender As Object, e As EventArgs) Handles btnInv.Click
         HideMenu()
         lblTitle.Text = "INVENTORY MANAGEMENT"
+        FrmInventory1.Visible = True
         FrmInventory1.BringToFront()
     End Sub
     Private Sub btnBrand_Click(sender As Object, e As EventArgs) Handles btnBrand.Click
@@ -79,5 +73,12 @@
         HideMenu()
         lblTitle.Text = "INVENTORY MANAGEMENT"
         FrmSupplier1.BringToFront()
+    End Sub
+
+    Private Sub btnStock_Click_1(sender As Object, e As EventArgs) Handles btnStock.Click
+        HideMenu()
+        lblTitle.Text = "STOCK MANAGEMENT"
+        FrmStock1.Visible = True
+        FrmStock1.BringToFront()
     End Sub
 End Class

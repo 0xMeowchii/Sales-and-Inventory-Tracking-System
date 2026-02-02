@@ -26,32 +26,32 @@ Partial Class frmMain
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.panelTop = New Guna.UI2.WinForms.Guna2Panel()
         Me.lblTitle = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.panelControls = New System.Windows.Forms.Panel()
+        Me.btnHide = New Guna.UI2.WinForms.Guna2ImageButton()
+        Me.btnMin = New Guna.UI2.WinForms.Guna2ImageButton()
+        Me.btnExit = New Guna.UI2.WinForms.Guna2ImageButton()
         Me.panelName = New Guna.UI2.WinForms.Guna2Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.panelMenu = New Guna.UI2.WinForms.Guna2Panel()
         Me.panelbuttons = New System.Windows.Forms.Panel()
-        Me.dropdownUsers = New System.Windows.Forms.Panel()
-        Me.btnUsers = New Guna.UI2.WinForms.Guna2Button()
-        Me.btnAdmin = New Guna.UI2.WinForms.Guna2Button()
-        Me.panelLogo = New Guna.UI2.WinForms.Guna2Panel()
-        Me.panelFill = New System.Windows.Forms.Panel()
-        Me.dropdownInventory = New System.Windows.Forms.Panel()
-        Me.btnBrand = New Guna.UI2.WinForms.Guna2Button()
-        Me.btnInv = New Guna.UI2.WinForms.Guna2Button()
-        Me.btnSupplier = New Guna.UI2.WinForms.Guna2Button()
         Me.btnDatabase = New Guna.UI2.WinForms.Guna2Button()
         Me.btnSales = New Guna.UI2.WinForms.Guna2Button()
         Me.btnStock = New Guna.UI2.WinForms.Guna2Button()
+        Me.dropdownInventory = New System.Windows.Forms.Panel()
+        Me.btnSupplier = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnBrand = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnInv = New Guna.UI2.WinForms.Guna2Button()
         Me.btnInventoryManagement = New Guna.UI2.WinForms.Guna2Button()
+        Me.dropdownUsers = New System.Windows.Forms.Panel()
+        Me.btnUsers = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnAdmin = New Guna.UI2.WinForms.Guna2Button()
         Me.btnSignOut = New Guna.UI2.WinForms.Guna2Button()
         Me.btnUsersManagement = New Guna.UI2.WinForms.Guna2Button()
         Me.btnDashboard = New Guna.UI2.WinForms.Guna2Button()
+        Me.panelLogo = New Guna.UI2.WinForms.Guna2Panel()
         Me.picLogo = New Guna.UI2.WinForms.Guna2CirclePictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnHide = New Guna.UI2.WinForms.Guna2ImageButton()
-        Me.btnMin = New Guna.UI2.WinForms.Guna2ImageButton()
-        Me.btnExit = New Guna.UI2.WinForms.Guna2ImageButton()
+        Me.panelFill = New System.Windows.Forms.Panel()
         Me.FrmDashboard1 = New attendancesystem.frmDashboard()
         Me.FrmUsers1 = New attendancesystem.frmUsers()
         Me.FrmAdmin1 = New attendancesystem.frmAdmin()
@@ -60,16 +60,16 @@ Partial Class frmMain
         Me.FrmBrand1 = New attendancesystem.frmBrand()
         Me.FrmSupplier1 = New attendancesystem.frmSupplier()
         Me.panelTop.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelControls.SuspendLayout()
         Me.panelName.SuspendLayout()
         Me.panelMenu.SuspendLayout()
         Me.panelbuttons.SuspendLayout()
+        Me.dropdownInventory.SuspendLayout()
         Me.dropdownUsers.SuspendLayout()
         Me.panelLogo.SuspendLayout()
-        Me.panelFill.SuspendLayout()
-        Me.dropdownInventory.SuspendLayout()
         CType(Me.picLogo, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panelFill.SuspendLayout()
         Me.SuspendLayout()
         '
         'Guna2Elipse1
@@ -105,6 +105,18 @@ Partial Class frmMain
         Me.lblTitle.Text = "DASHBOARD"
         Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PictureBox1.Image = Global.attendancesystem.My.Resources.Resources.icons8_menu_15
+        Me.PictureBox1.Location = New System.Drawing.Point(236, 0)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(39, 36)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
+        '
         'panelControls
         '
         Me.panelControls.BackColor = System.Drawing.Color.Transparent
@@ -118,6 +130,51 @@ Partial Class frmMain
         Me.panelControls.Padding = New System.Windows.Forms.Padding(0, 4, 13, 4)
         Me.panelControls.Size = New System.Drawing.Size(185, 36)
         Me.panelControls.TabIndex = 2
+        '
+        'btnHide
+        '
+        Me.btnHide.CheckedState.Parent = Me.btnHide
+        Me.btnHide.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnHide.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btnHide.HoverState.Parent = Me.btnHide
+        Me.btnHide.Image = Global.attendancesystem.My.Resources.Resources.icons8_minimize_15__1_
+        Me.btnHide.ImageSize = New System.Drawing.Size(15, 16)
+        Me.btnHide.Location = New System.Drawing.Point(3, 4)
+        Me.btnHide.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnHide.Name = "btnHide"
+        Me.btnHide.PressedState.Parent = Me.btnHide
+        Me.btnHide.Size = New System.Drawing.Size(55, 28)
+        Me.btnHide.TabIndex = 3
+        '
+        'btnMin
+        '
+        Me.btnMin.CheckedState.Parent = Me.btnMin
+        Me.btnMin.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMin.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btnMin.HoverState.Parent = Me.btnMin
+        Me.btnMin.Image = Global.attendancesystem.My.Resources.Resources.icons8_minimize_15
+        Me.btnMin.ImageSize = New System.Drawing.Size(15, 16)
+        Me.btnMin.Location = New System.Drawing.Point(58, 4)
+        Me.btnMin.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnMin.Name = "btnMin"
+        Me.btnMin.PressedState.Parent = Me.btnMin
+        Me.btnMin.Size = New System.Drawing.Size(63, 28)
+        Me.btnMin.TabIndex = 2
+        '
+        'btnExit
+        '
+        Me.btnExit.CheckedState.Parent = Me.btnExit
+        Me.btnExit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnExit.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btnExit.HoverState.Parent = Me.btnExit
+        Me.btnExit.Image = Global.attendancesystem.My.Resources.Resources.icons8_x_15__1_
+        Me.btnExit.ImageSize = New System.Drawing.Size(15, 16)
+        Me.btnExit.Location = New System.Drawing.Point(121, 4)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.PressedState.Parent = Me.btnExit
+        Me.btnExit.Size = New System.Drawing.Size(51, 28)
+        Me.btnExit.TabIndex = 1
         '
         'panelName
         '
@@ -177,166 +234,6 @@ Partial Class frmMain
         Me.panelbuttons.Padding = New System.Windows.Forms.Padding(13, 20, 13, 20)
         Me.panelbuttons.Size = New System.Drawing.Size(275, 647)
         Me.panelbuttons.TabIndex = 2
-        '
-        'dropdownUsers
-        '
-        Me.dropdownUsers.Controls.Add(Me.btnUsers)
-        Me.dropdownUsers.Controls.Add(Me.btnAdmin)
-        Me.dropdownUsers.Dock = System.Windows.Forms.DockStyle.Top
-        Me.dropdownUsers.Location = New System.Drawing.Point(13, 114)
-        Me.dropdownUsers.Margin = New System.Windows.Forms.Padding(4)
-        Me.dropdownUsers.Name = "dropdownUsers"
-        Me.dropdownUsers.Size = New System.Drawing.Size(249, 95)
-        Me.dropdownUsers.TabIndex = 10
-        '
-        'btnUsers
-        '
-        Me.btnUsers.BorderRadius = 15
-        Me.btnUsers.CheckedState.Parent = Me.btnUsers
-        Me.btnUsers.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnUsers.CustomImages.Parent = Me.btnUsers
-        Me.btnUsers.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnUsers.FillColor = System.Drawing.Color.Transparent
-        Me.btnUsers.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUsers.ForeColor = System.Drawing.Color.White
-        Me.btnUsers.HoverState.BorderColor = System.Drawing.Color.Maroon
-        Me.btnUsers.HoverState.FillColor = System.Drawing.Color.Red
-        Me.btnUsers.HoverState.Parent = Me.btnUsers
-        Me.btnUsers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnUsers.Location = New System.Drawing.Point(0, 47)
-        Me.btnUsers.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnUsers.Name = "btnUsers"
-        Me.btnUsers.ShadowDecoration.Parent = Me.btnUsers
-        Me.btnUsers.Size = New System.Drawing.Size(249, 47)
-        Me.btnUsers.TabIndex = 4
-        Me.btnUsers.Text = "Users"
-        '
-        'btnAdmin
-        '
-        Me.btnAdmin.BorderRadius = 15
-        Me.btnAdmin.CheckedState.Parent = Me.btnAdmin
-        Me.btnAdmin.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnAdmin.CustomImages.Parent = Me.btnAdmin
-        Me.btnAdmin.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnAdmin.FillColor = System.Drawing.Color.Transparent
-        Me.btnAdmin.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAdmin.ForeColor = System.Drawing.Color.White
-        Me.btnAdmin.HoverState.BorderColor = System.Drawing.Color.Maroon
-        Me.btnAdmin.HoverState.FillColor = System.Drawing.Color.Red
-        Me.btnAdmin.HoverState.Parent = Me.btnAdmin
-        Me.btnAdmin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnAdmin.Location = New System.Drawing.Point(0, 0)
-        Me.btnAdmin.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnAdmin.Name = "btnAdmin"
-        Me.btnAdmin.ShadowDecoration.Parent = Me.btnAdmin
-        Me.btnAdmin.Size = New System.Drawing.Size(249, 47)
-        Me.btnAdmin.TabIndex = 3
-        Me.btnAdmin.Text = "Admin"
-        '
-        'panelLogo
-        '
-        Me.panelLogo.Controls.Add(Me.picLogo)
-        Me.panelLogo.Dock = System.Windows.Forms.DockStyle.Top
-        Me.panelLogo.Location = New System.Drawing.Point(0, 20)
-        Me.panelLogo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.panelLogo.Name = "panelLogo"
-        Me.panelLogo.ShadowDecoration.Parent = Me.panelLogo
-        Me.panelLogo.Size = New System.Drawing.Size(275, 97)
-        Me.panelLogo.TabIndex = 0
-        '
-        'panelFill
-        '
-        Me.panelFill.Controls.Add(Me.FrmDashboard1)
-        Me.panelFill.Controls.Add(Me.FrmUsers1)
-        Me.panelFill.Controls.Add(Me.FrmAdmin1)
-        Me.panelFill.Controls.Add(Me.FrmInventory1)
-        Me.panelFill.Controls.Add(Me.FrmStock1)
-        Me.panelFill.Controls.Add(Me.FrmBrand1)
-        Me.panelFill.Controls.Add(Me.FrmSupplier1)
-        Me.panelFill.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panelFill.Location = New System.Drawing.Point(275, 36)
-        Me.panelFill.Margin = New System.Windows.Forms.Padding(4)
-        Me.panelFill.Name = "panelFill"
-        Me.panelFill.Size = New System.Drawing.Size(992, 764)
-        Me.panelFill.TabIndex = 2
-        '
-        'dropdownInventory
-        '
-        Me.dropdownInventory.Controls.Add(Me.btnSupplier)
-        Me.dropdownInventory.Controls.Add(Me.btnBrand)
-        Me.dropdownInventory.Controls.Add(Me.btnInv)
-        Me.dropdownInventory.Dock = System.Windows.Forms.DockStyle.Top
-        Me.dropdownInventory.Location = New System.Drawing.Point(13, 256)
-        Me.dropdownInventory.Margin = New System.Windows.Forms.Padding(4)
-        Me.dropdownInventory.Name = "dropdownInventory"
-        Me.dropdownInventory.Size = New System.Drawing.Size(249, 153)
-        Me.dropdownInventory.TabIndex = 18
-        '
-        'btnBrand
-        '
-        Me.btnBrand.BorderRadius = 15
-        Me.btnBrand.CheckedState.Parent = Me.btnBrand
-        Me.btnBrand.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnBrand.CustomImages.Parent = Me.btnBrand
-        Me.btnBrand.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnBrand.FillColor = System.Drawing.Color.Transparent
-        Me.btnBrand.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBrand.ForeColor = System.Drawing.Color.White
-        Me.btnBrand.HoverState.BorderColor = System.Drawing.Color.Maroon
-        Me.btnBrand.HoverState.FillColor = System.Drawing.Color.Red
-        Me.btnBrand.HoverState.Parent = Me.btnBrand
-        Me.btnBrand.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnBrand.Location = New System.Drawing.Point(0, 47)
-        Me.btnBrand.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnBrand.Name = "btnBrand"
-        Me.btnBrand.ShadowDecoration.Parent = Me.btnBrand
-        Me.btnBrand.Size = New System.Drawing.Size(249, 47)
-        Me.btnBrand.TabIndex = 5
-        Me.btnBrand.Text = "Brand"
-        '
-        'btnInv
-        '
-        Me.btnInv.BorderRadius = 15
-        Me.btnInv.CheckedState.Parent = Me.btnInv
-        Me.btnInv.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnInv.CustomImages.Parent = Me.btnInv
-        Me.btnInv.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnInv.FillColor = System.Drawing.Color.Transparent
-        Me.btnInv.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnInv.ForeColor = System.Drawing.Color.White
-        Me.btnInv.HoverState.BorderColor = System.Drawing.Color.Maroon
-        Me.btnInv.HoverState.FillColor = System.Drawing.Color.Red
-        Me.btnInv.HoverState.Parent = Me.btnInv
-        Me.btnInv.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnInv.Location = New System.Drawing.Point(0, 0)
-        Me.btnInv.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnInv.Name = "btnInv"
-        Me.btnInv.ShadowDecoration.Parent = Me.btnInv
-        Me.btnInv.Size = New System.Drawing.Size(249, 47)
-        Me.btnInv.TabIndex = 4
-        Me.btnInv.Text = "Inventory"
-        '
-        'btnSupplier
-        '
-        Me.btnSupplier.BorderRadius = 15
-        Me.btnSupplier.CheckedState.Parent = Me.btnSupplier
-        Me.btnSupplier.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnSupplier.CustomImages.Parent = Me.btnSupplier
-        Me.btnSupplier.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnSupplier.FillColor = System.Drawing.Color.Transparent
-        Me.btnSupplier.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSupplier.ForeColor = System.Drawing.Color.White
-        Me.btnSupplier.HoverState.BorderColor = System.Drawing.Color.Maroon
-        Me.btnSupplier.HoverState.FillColor = System.Drawing.Color.Red
-        Me.btnSupplier.HoverState.Parent = Me.btnSupplier
-        Me.btnSupplier.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnSupplier.Location = New System.Drawing.Point(0, 94)
-        Me.btnSupplier.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnSupplier.Name = "btnSupplier"
-        Me.btnSupplier.ShadowDecoration.Parent = Me.btnSupplier
-        Me.btnSupplier.Size = New System.Drawing.Size(249, 47)
-        Me.btnSupplier.TabIndex = 6
-        Me.btnSupplier.Text = "Supplier"
         '
         'btnDatabase
         '
@@ -410,6 +307,84 @@ Partial Class frmMain
         Me.btnStock.Text = "Stock"
         Me.btnStock.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
+        'dropdownInventory
+        '
+        Me.dropdownInventory.Controls.Add(Me.btnSupplier)
+        Me.dropdownInventory.Controls.Add(Me.btnBrand)
+        Me.dropdownInventory.Controls.Add(Me.btnInv)
+        Me.dropdownInventory.Dock = System.Windows.Forms.DockStyle.Top
+        Me.dropdownInventory.Location = New System.Drawing.Point(13, 256)
+        Me.dropdownInventory.Margin = New System.Windows.Forms.Padding(4)
+        Me.dropdownInventory.Name = "dropdownInventory"
+        Me.dropdownInventory.Size = New System.Drawing.Size(249, 153)
+        Me.dropdownInventory.TabIndex = 18
+        '
+        'btnSupplier
+        '
+        Me.btnSupplier.BorderRadius = 15
+        Me.btnSupplier.CheckedState.Parent = Me.btnSupplier
+        Me.btnSupplier.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSupplier.CustomImages.Parent = Me.btnSupplier
+        Me.btnSupplier.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnSupplier.FillColor = System.Drawing.Color.Transparent
+        Me.btnSupplier.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSupplier.ForeColor = System.Drawing.Color.White
+        Me.btnSupplier.HoverState.BorderColor = System.Drawing.Color.Maroon
+        Me.btnSupplier.HoverState.FillColor = System.Drawing.Color.Red
+        Me.btnSupplier.HoverState.Parent = Me.btnSupplier
+        Me.btnSupplier.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnSupplier.Location = New System.Drawing.Point(0, 94)
+        Me.btnSupplier.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnSupplier.Name = "btnSupplier"
+        Me.btnSupplier.ShadowDecoration.Parent = Me.btnSupplier
+        Me.btnSupplier.Size = New System.Drawing.Size(249, 47)
+        Me.btnSupplier.TabIndex = 6
+        Me.btnSupplier.Text = "Supplier"
+        '
+        'btnBrand
+        '
+        Me.btnBrand.BorderRadius = 15
+        Me.btnBrand.CheckedState.Parent = Me.btnBrand
+        Me.btnBrand.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBrand.CustomImages.Parent = Me.btnBrand
+        Me.btnBrand.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnBrand.FillColor = System.Drawing.Color.Transparent
+        Me.btnBrand.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBrand.ForeColor = System.Drawing.Color.White
+        Me.btnBrand.HoverState.BorderColor = System.Drawing.Color.Maroon
+        Me.btnBrand.HoverState.FillColor = System.Drawing.Color.Red
+        Me.btnBrand.HoverState.Parent = Me.btnBrand
+        Me.btnBrand.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnBrand.Location = New System.Drawing.Point(0, 47)
+        Me.btnBrand.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnBrand.Name = "btnBrand"
+        Me.btnBrand.ShadowDecoration.Parent = Me.btnBrand
+        Me.btnBrand.Size = New System.Drawing.Size(249, 47)
+        Me.btnBrand.TabIndex = 5
+        Me.btnBrand.Text = "Brand"
+        '
+        'btnInv
+        '
+        Me.btnInv.BorderRadius = 15
+        Me.btnInv.CheckedState.Parent = Me.btnInv
+        Me.btnInv.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnInv.CustomImages.Parent = Me.btnInv
+        Me.btnInv.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnInv.FillColor = System.Drawing.Color.Transparent
+        Me.btnInv.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnInv.ForeColor = System.Drawing.Color.White
+        Me.btnInv.HoverState.BorderColor = System.Drawing.Color.Maroon
+        Me.btnInv.HoverState.FillColor = System.Drawing.Color.Red
+        Me.btnInv.HoverState.Parent = Me.btnInv
+        Me.btnInv.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnInv.Location = New System.Drawing.Point(0, 0)
+        Me.btnInv.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnInv.Name = "btnInv"
+        Me.btnInv.ShadowDecoration.Parent = Me.btnInv
+        Me.btnInv.Size = New System.Drawing.Size(249, 47)
+        Me.btnInv.TabIndex = 4
+        Me.btnInv.Text = "Inventory"
+        '
         'btnInventoryManagement
         '
         Me.btnInventoryManagement.BorderRadius = 15
@@ -433,6 +408,61 @@ Partial Class frmMain
         Me.btnInventoryManagement.TabIndex = 11
         Me.btnInventoryManagement.Text = "Inventory"
         Me.btnInventoryManagement.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'dropdownUsers
+        '
+        Me.dropdownUsers.Controls.Add(Me.btnUsers)
+        Me.dropdownUsers.Controls.Add(Me.btnAdmin)
+        Me.dropdownUsers.Dock = System.Windows.Forms.DockStyle.Top
+        Me.dropdownUsers.Location = New System.Drawing.Point(13, 114)
+        Me.dropdownUsers.Margin = New System.Windows.Forms.Padding(4)
+        Me.dropdownUsers.Name = "dropdownUsers"
+        Me.dropdownUsers.Size = New System.Drawing.Size(249, 95)
+        Me.dropdownUsers.TabIndex = 10
+        '
+        'btnUsers
+        '
+        Me.btnUsers.BorderRadius = 15
+        Me.btnUsers.CheckedState.Parent = Me.btnUsers
+        Me.btnUsers.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnUsers.CustomImages.Parent = Me.btnUsers
+        Me.btnUsers.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnUsers.FillColor = System.Drawing.Color.Transparent
+        Me.btnUsers.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUsers.ForeColor = System.Drawing.Color.White
+        Me.btnUsers.HoverState.BorderColor = System.Drawing.Color.Maroon
+        Me.btnUsers.HoverState.FillColor = System.Drawing.Color.Red
+        Me.btnUsers.HoverState.Parent = Me.btnUsers
+        Me.btnUsers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnUsers.Location = New System.Drawing.Point(0, 47)
+        Me.btnUsers.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnUsers.Name = "btnUsers"
+        Me.btnUsers.ShadowDecoration.Parent = Me.btnUsers
+        Me.btnUsers.Size = New System.Drawing.Size(249, 47)
+        Me.btnUsers.TabIndex = 4
+        Me.btnUsers.Text = "Users"
+        '
+        'btnAdmin
+        '
+        Me.btnAdmin.BorderRadius = 15
+        Me.btnAdmin.CheckedState.Parent = Me.btnAdmin
+        Me.btnAdmin.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAdmin.CustomImages.Parent = Me.btnAdmin
+        Me.btnAdmin.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnAdmin.FillColor = System.Drawing.Color.Transparent
+        Me.btnAdmin.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAdmin.ForeColor = System.Drawing.Color.White
+        Me.btnAdmin.HoverState.BorderColor = System.Drawing.Color.Maroon
+        Me.btnAdmin.HoverState.FillColor = System.Drawing.Color.Red
+        Me.btnAdmin.HoverState.Parent = Me.btnAdmin
+        Me.btnAdmin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnAdmin.Location = New System.Drawing.Point(0, 0)
+        Me.btnAdmin.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnAdmin.Name = "btnAdmin"
+        Me.btnAdmin.ShadowDecoration.Parent = Me.btnAdmin
+        Me.btnAdmin.Size = New System.Drawing.Size(249, 47)
+        Me.btnAdmin.TabIndex = 3
+        Me.btnAdmin.Text = "Admin"
         '
         'btnSignOut
         '
@@ -506,6 +536,17 @@ Partial Class frmMain
         Me.btnDashboard.Text = "Dashboard"
         Me.btnDashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
+        'panelLogo
+        '
+        Me.panelLogo.Controls.Add(Me.picLogo)
+        Me.panelLogo.Dock = System.Windows.Forms.DockStyle.Top
+        Me.panelLogo.Location = New System.Drawing.Point(0, 20)
+        Me.panelLogo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.panelLogo.Name = "panelLogo"
+        Me.panelLogo.ShadowDecoration.Parent = Me.panelLogo
+        Me.panelLogo.Size = New System.Drawing.Size(275, 97)
+        Me.panelLogo.TabIndex = 0
+        '
         'picLogo
         '
         Me.picLogo.Image = Global.attendancesystem.My.Resources.Resources.logo_
@@ -519,62 +560,21 @@ Partial Class frmMain
         Me.picLogo.TabIndex = 0
         Me.picLogo.TabStop = False
         '
-        'PictureBox1
+        'panelFill
         '
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox1.Image = Global.attendancesystem.My.Resources.Resources.icons8_menu_15
-        Me.PictureBox1.Location = New System.Drawing.Point(236, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(39, 36)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
-        '
-        'btnHide
-        '
-        Me.btnHide.CheckedState.Parent = Me.btnHide
-        Me.btnHide.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnHide.Dock = System.Windows.Forms.DockStyle.Right
-        Me.btnHide.HoverState.Parent = Me.btnHide
-        Me.btnHide.Image = Global.attendancesystem.My.Resources.Resources.icons8_minimize_15__1_
-        Me.btnHide.ImageSize = New System.Drawing.Size(15, 16)
-        Me.btnHide.Location = New System.Drawing.Point(3, 4)
-        Me.btnHide.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnHide.Name = "btnHide"
-        Me.btnHide.PressedState.Parent = Me.btnHide
-        Me.btnHide.Size = New System.Drawing.Size(55, 28)
-        Me.btnHide.TabIndex = 3
-        '
-        'btnMin
-        '
-        Me.btnMin.CheckedState.Parent = Me.btnMin
-        Me.btnMin.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMin.Dock = System.Windows.Forms.DockStyle.Right
-        Me.btnMin.HoverState.Parent = Me.btnMin
-        Me.btnMin.Image = Global.attendancesystem.My.Resources.Resources.icons8_minimize_15
-        Me.btnMin.ImageSize = New System.Drawing.Size(15, 16)
-        Me.btnMin.Location = New System.Drawing.Point(58, 4)
-        Me.btnMin.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnMin.Name = "btnMin"
-        Me.btnMin.PressedState.Parent = Me.btnMin
-        Me.btnMin.Size = New System.Drawing.Size(63, 28)
-        Me.btnMin.TabIndex = 2
-        '
-        'btnExit
-        '
-        Me.btnExit.CheckedState.Parent = Me.btnExit
-        Me.btnExit.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnExit.Dock = System.Windows.Forms.DockStyle.Right
-        Me.btnExit.HoverState.Parent = Me.btnExit
-        Me.btnExit.Image = Global.attendancesystem.My.Resources.Resources.icons8_x_15__1_
-        Me.btnExit.ImageSize = New System.Drawing.Size(15, 16)
-        Me.btnExit.Location = New System.Drawing.Point(121, 4)
-        Me.btnExit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.PressedState.Parent = Me.btnExit
-        Me.btnExit.Size = New System.Drawing.Size(51, 28)
-        Me.btnExit.TabIndex = 1
+        Me.panelFill.Controls.Add(Me.FrmDashboard1)
+        Me.panelFill.Controls.Add(Me.FrmUsers1)
+        Me.panelFill.Controls.Add(Me.FrmAdmin1)
+        Me.panelFill.Controls.Add(Me.FrmInventory1)
+        Me.panelFill.Controls.Add(Me.FrmStock1)
+        Me.panelFill.Controls.Add(Me.FrmBrand1)
+        Me.panelFill.Controls.Add(Me.FrmSupplier1)
+        Me.panelFill.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.panelFill.Location = New System.Drawing.Point(275, 36)
+        Me.panelFill.Margin = New System.Windows.Forms.Padding(4)
+        Me.panelFill.Name = "panelFill"
+        Me.panelFill.Size = New System.Drawing.Size(992, 764)
+        Me.panelFill.TabIndex = 2
         '
         'FrmDashboard1
         '
@@ -611,6 +611,7 @@ Partial Class frmMain
         Me.FrmInventory1.Name = "FrmInventory1"
         Me.FrmInventory1.Size = New System.Drawing.Size(992, 764)
         Me.FrmInventory1.TabIndex = 3
+        Me.FrmInventory1.Visible = False
         '
         'FrmStock1
         '
@@ -651,16 +652,16 @@ Partial Class frmMain
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.panelTop.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panelControls.ResumeLayout(False)
         Me.panelName.ResumeLayout(False)
         Me.panelMenu.ResumeLayout(False)
         Me.panelbuttons.ResumeLayout(False)
+        Me.dropdownInventory.ResumeLayout(False)
         Me.dropdownUsers.ResumeLayout(False)
         Me.panelLogo.ResumeLayout(False)
-        Me.panelFill.ResumeLayout(False)
-        Me.dropdownInventory.ResumeLayout(False)
         CType(Me.picLogo, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panelFill.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
